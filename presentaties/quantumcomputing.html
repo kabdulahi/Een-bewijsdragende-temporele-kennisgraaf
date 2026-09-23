@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ophangen · Lespresentatie</title>
+  <style>:root{color-scheme:dark;--bg:#10171c;--vlak:#182229;--lijn:#33424b;--tekst:#edf2ef;--zacht:#a8b9bc;--accent:#b7ebba;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15px}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 70% 15%,#29443e 0,transparent 58%),var(--bg);color:var(--tekst);min-height:100vh}button,select,input{font:inherit}button,select{color:var(--tekst);border:1px solid var(--lijn);background:#202e36;border-radius:7px;padding:10px 15px;cursor:pointer}button:hover{border-color:var(--accent);background:#2a3d43}button:disabled{opacity:.4;cursor:default}button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.primair{background:var(--accent);color:#13241a;border-color:var(--accent);font-weight:650}.primair:hover{background:#d3f7d5;color:#13241a}.klein{font-size:12px;padding:8px 11px}.muted,.voetnoot{color:var(--zacht)}.voetnoot{font-size:12px;line-height:1.6}.merk,.overline{font-size:11px;letter-spacing:.17em;font-weight:650}.merk{color:var(--accent);margin:0 0 10px}.merk span{color:var(--zacht)}h1,h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;line-height:1.16}h1{font-size:26px;margin:0}h2{font-size:35px;margin:12px 0 23px}h3{font-size:13px;color:var(--accent);letter-spacing:.04em;margin-top:24px}p,li{line-height:1.75}.voorblad{max-width:850px;margin:0 auto;padding:15vh 32px}.voorblad h1{font-size:clamp(40px,7vw,78px);margin:30px 0}.voorblad p{max-width:620px}.voorblad button{margin:22px 0}
+dialog{padding:0;border:1px solid #455b5f;border-radius:16px;background:var(--bg);color:var(--tekst);width:min(1280px,96vw);height:94vh;max-height:1000px;overflow:hidden;box-shadow:0 24px 120px #0008}dialog[open]{display:flex;flex-direction:column}dialog::backdrop{background:#060c11c9;backdrop-filter:blur(7px)}.kop{padding:23px 28px;display:flex;gap:25px;align-items:center;justify-content:space-between;border-bottom:1px solid var(--lijn)}.kop h1{font-size:23px}.werkruimte{display:grid;grid-template-columns:250px 1fr;min-height:0;flex:1}.programma{padding:23px 18px;overflow:auto;border-right:1px solid var(--lijn);background:#141e24}.programma .overline{margin:0 0 10px}.programma .muted{font-size:12px;margin:0 0 20px}.programma nav{display:grid;gap:7px}.faseknop{display:flex;text-align:left;align-items:flex-start;gap:12px;padding:12px 10px;border:1px solid transparent;background:transparent;line-height:1.45}.faseknop .nummer{color:var(--zacht);font-size:12px;padding-top:2px}.faseknop small{display:block;color:var(--zacht);font-size:11px;margin-top:4px}.faseknop[aria-current=step]{background:#243931;border-color:#526e55}.faseknop[aria-current=step] .nummer{color:var(--accent)}.inhoud{padding:26px 35px 40px;overflow:auto;min-width:0}.fasekop{display:flex;justify-content:space-between;gap:20px;color:var(--accent);font-size:11px;align-items:center}.beeldkaart{background:#131f28;border:1px solid var(--lijn);border-radius:12px;overflow:hidden}.beeldkop{display:flex;justify-content:space-between;align-items:center;padding:12px 15px;gap:10px}.schakelaar{display:flex;gap:2px;border:1px solid var(--lijn);border-radius:7px;padding:3px}.schakelaar button{font-size:12px;border:0;padding:7px 12px;background:transparent}.schakelaar button[aria-pressed=true]{background:#345047;color:#d5f5d9}canvas{display:block;width:100%;height:290px;touch-action:none;cursor:grab}canvas:active{cursor:grabbing}.beeldvoet{display:flex;justify-content:space-between;gap:10px;font-size:12px;padding:12px 18px;border-top:1px solid #26383f}.beeldvoet .muted{font-size:11px}.beeldkaart .voetnoot{margin:10px 18px 15px}.kansen{display:flex;gap:14px;margin:0 18px}.kans{flex:1;min-width:0;font-size:12px;color:var(--zacht)}.kans meter{display:block;width:100%;height:12px;accent-color:var(--accent);margin-top:5px}.uitleg p{font-size:15px}.werkvorm{border-left:2px solid var(--accent);padding:0 0 0 18px}.werkvorm h3{margin-bottom:4px}.werkvorm p{font-size:14px;color:#cbd6d5}ol{padding-left:26px}li{padding-left:5px;margin-bottom:12px}details{border:1px solid var(--lijn);border-radius:8px;padding:15px 18px;margin-top:25px}summary{cursor:pointer;color:var(--accent);font-size:13px}details p{font-size:14px}.bediening{padding:16px 26px 20px;border-top:1px solid var(--lijn);background:#182329}.tijdregel{display:flex;justify-content:space-between;align-items:center;font-size:12px}.tijdregel output{font-variant-numeric:tabular-nums;color:var(--accent);margin-left:14px}#status{color:var(--zacht)}#tijd{width:100%;height:22px;accent-color:var(--accent);cursor:pointer;margin:8px 0 12px}.knoppen,.knoppen>div{display:flex;gap:8px;align-items:center}.knoppen{justify-content:space-between}.snelheid{display:flex;gap:10px;align-items:center;font-size:12px;color:var(--zacht)}.snelheid select{font-size:12px;padding:9px}.knoppen button{font-size:13px;white-space:nowrap}
+@media(max-width:760px){dialog{width:98vw;height:97vh;border-radius:10px}.kop{padding:15px}.kop h1{font-size:20px}.werkruimte{grid-template-columns:1fr;grid-template-rows:auto 1fr}.programma{max-height:130px;border-right:0;border-bottom:1px solid var(--lijn);padding:10px 14px}.programma .overline,.programma>.muted,.programma>.voetnoot{display:none}.programma nav{display:flex;overflow:auto}.faseknop{min-width:180px;font-size:12px}.inhoud{padding:20px}.bediening{padding:12px}.knoppen{flex-wrap:wrap}.knoppen>div{flex-wrap:wrap}.snelheid{margin-top:6px}h2{font-size:28px}canvas{height:240px}.beeldvoet{flex-direction:column}.kop .merk{font-size:9px}.kansen{gap:8px}.fasekop{align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+  <main class="voorblad">
+    <p class="merk">OPHANGEN <span> / INTERACTIEF COLLEGE</span></p>
+    <h1 id="voorblad-titel">Lespresentatie</h1>
+    <p id="voorblad-doel"></p>
+    <p id="voorblad-meta" class="muted"></p>
+    <button id="openen" class="primair">Open de lespresentatie ↗</button>
+    <p class="voetnoot">Een lesplan in ruimte en tijd. Werkt volledig offline.</p>
+  </main>
+  <dialog id="les" aria-labelledby="les-titel">
+    <header class="kop">
+      <div><p class="merk">OPHANGEN <span> / LESATELIER</span></p><h1 id="les-titel"></h1></div>
+      <button id="sluiten" class="klein" aria-label="Sluit de lespresentatie">Sluiten ×</button>
+    </header>
+    <div class="werkruimte">
+      <aside class="programma" aria-label="Lesprogramma">
+        <p class="overline">HET PROGRAMMA</p>
+        <p id="les-meta" class="muted"></p>
+        <nav id="fasen" aria-label="Ga naar een lesfase"></nav>
+        <p class="voetnoot">Kies een fase of verplaats de tijdschuif. De les begint gepauzeerd.</p>
+      </aside>
+      <section class="inhoud">
+        <div class="fasekop"><span id="fase-label" class="overline"></span><span id="voortgang"></span></div>
+        <h2 id="fase-titel"></h2>
+        <div class="beeldkaart">
+          <div class="beeldkop"><div role="group" aria-label="Weergave" class="schakelaar"><button id="model" aria-pressed="true">3D-model</button><button id="structuur" aria-pressed="false">Lesstructuur</button></div><button id="camera" class="klein">Herstel camera</button></div>
+          <canvas id="beeld" role="img" aria-label="Driedimensionale lesvisualisatie"></canvas>
+          <div class="beeldvoet"><span id="beeld-tekst"></span><span class="muted">Sleep om te draaien</span></div>
+          <div id="kansen" class="kansen" aria-label="Meetkansen"></div>
+          <p id="beeld-uitleg" class="voetnoot"></p>
+        </div>
+        <section class="uitleg"><h3>Uitleg en voorbeelden</h3><div id="toelichting"></div></section>
+        <section class="werkvorm"><h3>Werkvorm en tempo</h3><p id="werkvorm"></p></section>
+        <section><h3>Opdrachten</h3><ol id="opdrachten"></ol></section>
+        <details id="docent"><summary>Controlevraag en antwoord voor de docent</summary><p id="controle"></p></details>
+      </section>
+    </div>
+    <footer class="bediening">
+      <div class="tijdregel"><label for="tijd">Lestijd <output id="klok" for="tijd">00:00 / 60:00</output></label><span id="status" role="status" aria-live="polite">Gepauzeerd</span></div>
+      <input id="tijd" type="range" min="0" step="1" value="0" aria-label="Lestijd in seconden">
+      <div class="knoppen"><div><button id="herstart" aria-label="Ga terug naar het begin">↺ Begin</button><button id="vorige">← Vorige</button><button id="afspelen" class="primair">Afspelen</button><button id="volgende">Volgende →</button></div><label class="snelheid">Tempo <select id="snelheid"><option value="1">1× · lestempo</option><option value="10">10× · overzicht</option><option value="60">60× · voorvertoning</option></select></label></div>
+    </footer>
+  </dialog>
+  <noscript>Schakel JavaScript in om de tijdlijn en 3D-presentatie te bedienen. De volledige les staat ook in het invoerbestand.</noscript>
+  <script id="lesgegevens" type="application/json">{"velden": {"Titel": "Quantumcomputing begrijpen: van bit tot verstrengeling", "Vak": "Informatica", "Niveau": "4 vwo", "Onderwerp": "Qubits, meetkansen, quantumpoorten, interferentie en verstrengeling", "Leerdoel": "Je kunt meetkansen berekenen, eenvoudige quantumcircuits volgen, een Blochbol lezen en mogelijkheden en beperkingen van quantumcomputing onderbouwen.", "Duur": "60 minuten"}, "duur": 3600, "instructies": [{"nummer": 1, "tekst": "Schrijf in een zin op wat je denkt dat een quantumcomputer bijzonder maakt.", "regel": 9}, {"nummer": 2, "tekst": "Kies bij de uitspraak \"Een quantumcomputer geeft alle mogelijke antwoorden tegelijk terug\" tussen juist en onjuist en bewaar je argument.", "regel": 10}, {"nummer": 3, "tekst": "Noem een berekening die je dagelijks aan een gewone computer overlaat.", "regel": 11}, {"nummer": 4, "tekst": "Geef alle verschillende rijtjes die je met drie bits kunt vormen.", "regel": 12}, {"nummer": 5, "tekst": "Bereken met [4] het aantal mogelijke rijtjes voor drie bits en voorspel het aantal voor vijf bits.", "regel": 13}, {"nummer": 6, "tekst": "Leg uit waarom een onbekende klassieke bitwaarde niet automatisch een quantumtoestand is.", "regel": 14}, {"nummer": 7, "tekst": "Bereken voor de amplitudes a = 3/5 en b = 4/5 de meetkansen op 0 en 1.", "regel": 15}, {"nummer": 8, "tekst": "Controleer of de amplitudes a = 1/2 en b = 1/2 samen een genormaliseerde qubittoestand beschrijven.", "regel": 16}, {"nummer": 9, "tekst": "Vergelijk de meetkansen bij a = 3/5, b = 4/5 met die bij a = 3/5, b = -4/5.", "regel": 17}, {"nummer": 10, "tekst": "Teken een Blochbol en plaats de toestanden |0\u003e, |1\u003e en |+\u003e op de juiste positie.", "regel": 18}, {"nummer": 11, "tekst": "Bereken de meetkansen bij theta = 60 graden met P(0) = cos(theta/2)^2 en P(1) = sin(theta/2)^2.", "regel": 19}, {"nummer": 12, "tekst": "Beschrijf het verschil tussen het draaien van de camera en het veranderen van de quantumtoestand.", "regel": 20}, {"nummer": 13, "tekst": "Bepaal de eindtoestand van |0\u003e na eerst X en daarna X.", "regel": 21}, {"nummer": 14, "tekst": "Bereken de amplitudes van |0\u003e na eerst H en daarna H met H(a,b) = ((a+b)/sqrt(2), (a-b)/sqrt(2)).", "regel": 22}, {"nummer": 15, "tekst": "Teken het circuit uit [14] van links naar rechts met een meting aan het einde.", "regel": 23}, {"nummer": 16, "tekst": "Bereken vanuit |0\u003e de opeenvolgende toestanden na H, Z en H, waarbij Z(a,b) = (a,-b).", "regel": 24}, {"nummer": 17, "tekst": "Vergelijk de eindmeting uit [14] met die uit [16] en verklaar het verschil door interferentie.", "regel": 25}, {"nummer": 18, "tekst": "Herschrijf de uitspraak \"De tweede H-poort gooit opnieuw een munt op\" tot een correcte uitleg.", "regel": 26}, {"nummer": 19, "tekst": "Geef de vier mogelijke meetrijtjes van twee qubits in de volgorde A gevolgd door B.", "regel": 27}, {"nummer": 20, "tekst": "Bepaal de toestand na H op A en vervolgens CNOT van A naar B, met begintoestand |00\u003e.", "regel": 28}, {"nummer": 21, "tekst": "Leg uit waarom de Belltoestand uit [20] geen bestuurbare verbinding voor berichten vormt.", "regel": 29}, {"nummer": 22, "tekst": "Bereken bij de verzonnen meetreeks 00: 47, 01: 3, 10: 2, 11: 48 het percentage gelijke uitkomsten.", "regel": 30}, {"nummer": 23, "tekst": "Vergelijk [22] met de ideale Bellvoorspelling en onderscheid toevalsvariatie van een uitkomst die ideaal onmogelijk is.", "regel": 31}, {"nummer": 24, "tekst": "Formuleer een controleproef waarmee je meetfouten beter kunt onderzoeken.", "regel": 32}, {"nummer": 25, "tekst": "Bereken sqrt(256) en sqrt(1024) en vergelijk deze waarden met 256 en 1024.", "regel": 33}, {"nummer": 26, "tekst": "Beargumenteer waarom de getallen uit [25] geen gegarandeerde versnelling van een gewone internetzoekopdracht geven.", "regel": 34}, {"nummer": 27, "tekst": "Kies tussen molecuulsimulatie en het opmaken van een schoolverslag als onderzoekstoepassing en onderbouw je keuze.", "regel": 35}, {"nummer": 28, "tekst": "Formuleer zonder aantekeningen het verschil tussen een amplitude en een meetkans.", "regel": 36}, {"nummer": 29, "tekst": "Verklaar in twee zinnen het verschil tussen superpositie en verstrengeling.", "regel": 37}, {"nummer": 30, "tekst": "Herschrijf je eerste antwoord uit [1] met minstens een mogelijkheid en een beperking van quantumcomputing.", "regel": 38}], "fasen": [{"start": 0, "einde": 5, "titel": "Startvraag en route door het college", "opdrachten": [1, 2, 3], "toelichting": ["Vandaag onderzoeken we hoe je met quantumregels informatie verwerkt. Aan het einde moet je een voorspelling kunnen controleren: welke uitkomsten verwacht ik na deze bewerkingen, en waarom? We werken met papier, een pen en een rekenmachine in gradenstand. Voorkennis: breuken, kwadraten, wortels en eenvoudige kansen. Complexe getallen worden genoemd, maar zijn geen rekenvereiste. Spreek af dat leerlingen bij een onbekend begrip een vraagteken noteren; na elk blok is ruimte om dit te bespreken.", "Laat iedereen eerst zelfstandig de openingszin opschrijven. Verzamel daarna twee verschillende verwachtingen op het bord. Bewaar de uitspraak over alle antwoorden tegelijk voor het einde; laat nu vooral de argumenten horen. Kondig de route aan: bits, qubits, de Blochbol, poorten, interferentie, twee qubits en toepassingen. Bij iedere stap gebruiken we dezelfde cyclus: voorspellen, uitwerken, vergelijken, verklaren. De tijdlijn in het venster volgt onze lesminuten. Een overgang naar de volgende fase is een didactische stap; de duur van een lesblok stelt geen fysieke bewerkingstijd van een quantumprocessor voor."], "werkvorm": "0-1 minuut individueel de startzin schrijven; 1-3 minuten verwachtingen in tweetallen vergelijken; 3-5 minuten doel, voorkennis en route klassikaal bespreken.", "controle": "Welke vraag staat centraal? Verwacht: voorspellen welke meetuitkomsten bij een gegeven voorbereiding en reeks bewerkingen horen, en de voorspelling kunnen uitleggen.", "beeld": "klassiek", "theta": 0.0, "phi": 0.0, "regel": 41}, {"start": 5, "einde": 11, "titel": "Van klassieke bits naar een nieuwe beschrijving", "opdrachten": [4, 5, 6], "toelichting": ["Een bit heeft twee mogelijke waarden, 0 en 1. Die waarden kunnen bijvoorbeeld uit en aan voorstellen; de gekozen betekenis is een afspraak. Met twee bits krijg je 00, 01, 10 en 11. Met ieder extra bit verdubbel je het aantal mogelijke rijtjes. Werk voor drie bits systematisch: eerst alle rijtjes die met 0 beginnen, daarna die met 1 beginnen. Het resultaat is 000, 001, 010, 011, 100, 101, 110 en 111: acht mogelijkheden. Vijf bits leveren 2^5 = 32 mogelijkheden. Een klassiek register bevat op een moment een bepaald rijtje.", "Maak onderscheid tussen een waarde en onze kennis daarvan. Een omgekeerd kaartje kan een 0 bevatten terwijl jij dat nog niet weet. Je kunt aan je onzekerheid kansen toekennen, maar daarmee heb je nog geen superpositie gemaakt. Bij een qubit gebruiken we amplitudes om een toestand te beschrijven. Die beschrijving maakt andere bewerkingen en voorspellingen mogelijk. We onderzoeken straks het verschil door twee bewerkingen achter elkaar te zetten. Vraag leerlingen daarom hun kaartjesvergelijking als voorlopige gedachte te bewaren, zonder er al alle quantumverschijnselen mee te willen verklaren."], "werkvorm": "5-7 minuten uitleg en gezamenlijk twee bits uitwerken; 7-9 minuten opdrachten 4 en 5 zelfstandig; 9-10 minuten kaartjesvoorbeeld in tweetallen; 10-11 minuten antwoorden en overgang bespreken.", "controle": "Hoeveel waarden levert een meting van vijf bits tegelijk op? Verwacht: een rijtje van vijf bits, gekozen uit 32 mogelijke rijtjes.", "beeld": "klassiek", "theta": 0.0, "phi": 0.0, "regel": 49}, {"start": 11, "einde": 18, "titel": "Amplitudes, superpositie en meetkansen", "opdrachten": [7, 8, 9], "toelichting": ["Schrijf |psi\u003e = a|0\u003e + b|1\u003e. De tekens |0\u003e en |1\u003e zijn namen van basistoestanden; lees ze als ket nul en ket een. De getallen a en b heten amplitudes. Voor onze rekenvoorbeelden zijn ze re\u00ebel, zodat P(0) = a^2 en P(1) = b^2. De algemene regel gebruikt de gekwadrateerde absolute waarde van mogelijk complexe amplitudes. Omdat de meetkansen samen 1 moeten zijn, geldt hier a^2 + b^2 = 1. Een superpositie is een combinatie van basistoestanden met amplitudes. Een meting in deze basis geeft een afzonderlijke 0 of 1.", "Werk opdracht 7 langzaam uit: (3/5)^2 = 9/25 = 0,36 en (4/5)^2 = 16/25 = 0,64. Controleer daarna 9/25 + 16/25 = 1. Bij opdracht 8 krijg je 1/4 + 1/4 = 1/2; die voorgestelde toestand is dus niet genormaliseerd. Voor gelijke positieve amplitudes gebruik je 1/sqrt(2), niet 1/2. Een minteken verdwijnt bij het kwadrateren: opdracht 9 geeft opnieuw 36% en 64%. Noteer de vraag waarom we het minteken dan toch bewaren. Die vraag verbindt dit rekenwerk straks met interferentie."], "werkvorm": "11-14 minuten uitleg met het uitgewerkte breukenvoorbeeld; 14-16 minuten individueel de controles en tekenwisseling berekenen; 16-17 minuten berekeningen vergelijken; 17-18 minuten misconcepties over amplitude en kans bespreken.", "controle": "Is een amplitude van -4/5 een negatieve kans? Verwacht: nee, de meetkans is (-4/5)^2 = 16/25; het teken blijft relevant voor latere bewerkingen.", "beeld": "bloch", "theta": 106.2602047083, "phi": 0.0, "regel": 57}, {"start": 18, "einde": 24, "titel": "De Blochbol als ruimtelijke toestandskaart", "opdrachten": [10, 11, 12], "toelichting": ["De Blochbol beeldt een zuivere toestand van een enkele qubit af als een pijl van het middelpunt naar het boloppervlak. Bovenaan staat |0\u003e, onderaan |1\u003e. De plustoestand |+\u003e = (|0\u003e + |1\u003e)/sqrt(2) ligt op de positieve x-as van de evenaar. De bol is een wiskundige kaart van toestanden, geen afbeelding van een deeltje dat letterlijk rond een bol draait. Het perspectief veranderen helpt om assen te zien; het verandert geen meetkans. Laat een leerling voorspellen waar de drie labels staan voordat je de tekening bespreekt.", "We geven posities aan met theta, gemeten vanaf de bovenkant, en phi, de hoek rond de verticale as. De invoer gebruikt graden. Voor een meting in de 0/1-basis geldt P(0) = cos(theta/2)^2 en P(1) = sin(theta/2)^2. Bij theta = 60 graden is de halve hoek 30 graden: P(0) = 3/4 en P(1) = 1/4. Theta = 90 graden geeft gelijke kansen. Phi verandert deze twee kansen niet, maar bewaart informatie over de relatieve fase. Die kan na een volgende poort wel meetbaar verschil maken. Een afzonderlijke qubit van een verstrengeld paar krijgt hier geen eigen zuivere pijl op het oppervlak."], "werkvorm": "18-20 minuten de bol en camerahoek bespreken; 20-22 minuten tekenen en theta = 60 graden uitrekenen; 22-23 minuten antwoorden vergelijken; 23-24 minuten grenzen van het beeld controleren.", "controle": "Veranderen P(0) en P(1) wanneer alleen phi verandert? Verwacht: niet bij rechtstreeks meten in de 0/1-basis; een volgende bewerking kan het faseverschil zichtbaar maken.", "beeld": "bloch", "theta": 60.0, "phi": 0.0, "regel": 65}, {"start": 24, "einde": 31, "titel": "Quantumpoorten en een circuit lezen", "opdrachten": [13, 14, 15], "toelichting": ["Een quantumpoort is een voorgeschreven bewerking op de toestand. Lees onze circuits van links naar rechts. X wisselt |0\u003e en |1\u003e om. Dus |0\u003e gaat via X naar |1\u003e en via nogmaals X terug naar |0\u003e. H heet de Hadamardpoort. Voor re\u00eble amplitudes is de rekenregel H(a,b) = ((a+b)/sqrt(2), (a-b)/sqrt(2)). Zet a = 1 en b = 0 in: beide nieuwe amplitudes worden 1/sqrt(2). H maakt vanuit |0\u003e dus de plustoestand. Dat is een bepaalde, herhaalbare toestand; de willekeur verschijnt bij een geschikte meting.", "Pas opnieuw H toe. De amplitude bij 0 wordt (1/sqrt(2) + 1/sqrt(2))/sqrt(2) = 1. De amplitude bij 1 wordt (1/sqrt(2) - 1/sqrt(2))/sqrt(2) = 0. Het circuit |0\u003e -\u003e H -\u003e H -\u003e meten geeft in het ideale model zeker 0. Laat de klas de twee regels afzonderlijk uitwerken: een plusteken in de bovenste regel, een minteken in de onderste. Meet in dit voorbeeld niet tussen de twee H-poorten. Een tussentijdse meting zou de toestand veranderen en daarmee een andere proef opleveren. De getoonde plustoestand hoort bij het punt na de eerste H."], "werkvorm": "24-27 minuten X en de eerste H voordoen; 27-29 minuten de tweede H zelfstandig uitrekenen; 29-30 minuten het circuit tekenen; 30-31 minuten de eindmeting gezamenlijk verklaren.", "controle": "Waarom bewijst H gevolgd door H dat H geen gewone muntworp is? Verwacht: zonder tussenmeting keert |0\u003e zeker terug; twee onafhankelijke muntworpen hebben dat gedrag niet.", "beeld": "bloch", "theta": 90.0, "phi": 0.0, "regel": 73}, {"start": 31, "einde": 38, "titel": "Interferentie zichtbaar maken", "opdrachten": [16, 17, 18], "toelichting": ["Interferentie betekent hier dat amplitudes voor dezelfde uitkomst elkaar kunnen versterken of opheffen. Introduceer Z met de regel Z(a,b) = (a,-b). Na H vanuit |0\u003e hebben we (1/sqrt(2), 1/sqrt(2)). Na Z staat er (1/sqrt(2), -1/sqrt(2)): de mintoestand |-\u003e. Op de Blochbol ligt deze tegenover |+\u003e op de evenaar, bij phi = 180 graden. Rechtstreeks meten zou voor beide uitkomsten kans 1/2 geven. Het verschil zit in de relatieve fase, hier zichtbaar als een minteken tussen de amplitudes.", "Voeg de laatste H toe. De amplitude bij 0 wordt (1/sqrt(2) - 1/sqrt(2))/sqrt(2) = 0. De amplitude bij 1 wordt (1/sqrt(2) - (-1/sqrt(2)))/sqrt(2) = 1. Dus H, Z, H vanuit |0\u003e eindigt in |1\u003e. Omcirkel het dubbele minteken: daar ontstaan vaak rekenfouten. Vergelijk dit met H, H: dezelfde beginvoorbereiding, maar een andere fasebewerking geeft een andere zekere einduitkomst. Dit is onze concrete verklaring van interferentie. Laat leerlingen eerst aanwijzen welke amplitudes worden opgeteld en daarna de kansen berekenen. Wie te vroeg kwadrateert, verliest het teken dat het verschil verklaart."], "werkvorm": "31-34 minuten fase en Z uitleggen; 34-36 minuten H, Z, H uitwerken; 36-37 minuten vergelijken met H, H; 37-38 minuten de muntworpuitspraak herschrijven en bespreken.", "controle": "Welke ideale einduitkomst verwacht je na H, Z, H vanuit |0\u003e? Verwacht: 1 met kans 100%; de bijdragen aan 0 heffen elkaar op en die aan 1 versterken elkaar.", "beeld": "bloch", "theta": 90.0, "phi": 180.0, "regel": 81}, {"start": 38, "einde": 45, "titel": "Twee qubits en verstrengeling", "opdrachten": [19, 20, 21], "toelichting": ["Noem de qubits A en B en schrijf in deze les steeds A eerst. De basisrijtjes zijn 00, 01, 10 en 11. Begin met |00\u003e. H op A geeft (|00\u003e + |10\u003e)/sqrt(2). Daarna volgt CNOT: B wordt omgedraaid als A in de betreffende basisterm 1 is. De term |00\u003e blijft |00\u003e; de term |10\u003e wordt |11\u003e. Daardoor ontstaat (|00\u003e + |11\u003e)/sqrt(2), een Belltoestand. Ideaal geeft meten in de 0/1-basis 00 of 11, elk met kans 1/2. De afzonderlijke bits zijn willekeurig, maar binnen hetzelfde meetpaar zijn ze gelijk.", "De gezamenlijke Belltoestand kun je niet schrijven als een product van twee afzonderlijke zuivere qubittoestanden: dat noemen we verstrengeling. Daarom vervangen we de enkele Blochpijl door een beeld van gezamenlijke uitkomsten. Alleen twee gelijke klassieke kaartjes uitdelen bewijst geen verstrengeling; voor zo'n onderscheid zijn ook andere meetinstellingen nodig. A kan de eigen uitkomst niet kiezen en daarmee geen gewenste boodschap aan B sturen. Hun afzonderlijke uitkomsten blijven willekeurig. Pas door de lijsten later via een gewoon communicatiekanaal te vergelijken, zien ze de overeenkomst. Laat tweetallen het verschil verwoorden tussen weten dat uitkomsten overeenkomen en bepalen welke uitkomst de ander ontvangt."], "werkvorm": "38-41 minuten het circuit en beide termen op het bord volgen; 41-43 minuten leerlingen de toestand laten afleiden; 43-44 minuten kaartjes en berichten bespreken; 44-45 minuten begrip controleren.", "controle": "Kunnen we het Bellpaar afbeelden als twee zuivere Blochpijlen? Verwacht: nee; de afzonderlijke toestanden zijn gemengd en de gezamenlijke correlaties vereisen een beschrijving van het paar.", "beeld": "bell", "theta": 0.0, "phi": 0.0, "regel": 89}, {"start": 45, "einde": 51, "titel": "Meten, herhalen en fouten onderzoeken", "opdrachten": [22, 23, 24], "toelichting": ["Een meetronde, vaak een shot genoemd, bestaat hier uit opnieuw voorbereiden, het circuit uitvoeren en meten. Herhaald uitlezen zonder opnieuw voorbereiden is een andere proef. Vergelijk verwachte kansen met aantallen waarnemingen. Als twee uitkomsten elk kans 1/2 hebben, hoeven honderd rondes niet precies vijftig van elk te geven. De reeks 00: 47, 01: 3, 10: 2, 11: 48 is speciaal voor deze les verzonnen; het is geen hardwaremeting. Het aandeel gelijke uitkomsten is (47 + 48)/100 = 95%.", "Bij het ideale Bellcircuit zijn 01 en 10 onmogelijk in deze meetbasis. Hun aanwezigheid past dus niet bij uitsluitend toevalsvariatie van dat ideale model. Een echte proef kan last hebben van fouten bij voorbereiden, poorten of uitlezen. Het verschil tussen 47 en 48 bewijst op zichzelf geen storing: aantallen wisselen ook bij juiste kansen. Laat leerlingen als controle eerst |00\u003e voorbereiden zonder het Bellcircuit en de uitkomsten tellen. Zo onderzoek je een deel van de fouten, maar je isoleert niet automatisch elke oorzaak. Meer meetrondes verkleinen doorgaans de statistische onzekerheid; ze repareren geen systematische fout. Laat iedere groep een conclusie en een grens aan die conclusie formuleren."], "werkvorm": "45-47 minuten shots en het verzonnen meetverslag uitleggen; 47-49 minuten percentages en afwijkingen onderzoeken; 49-50 minuten een controleproef ontwerpen; 50-51 minuten conclusies bespreken.", "controle": "Bewijst 95% gelijke uitkomsten dat een apparaat correct werkt en verstrengeling heeft gemaakt? Verwacht: nee; dit is een beperkte controle in een meetbasis, waarvoor aanvullende proeven en foutanalyse nodig zijn.", "beeld": "bell", "theta": 0.0, "phi": 0.0, "regel": 97}, {"start": 51, "einde": 57, "titel": "Toepassingen zonder wonderverhalen", "opdrachten": [25, 26, 27], "toelichting": ["Een quantumalgoritme moet bewerkingen zo kiezen dat bruikbare uitkomsten voldoende waarschijnlijk worden. Superpositie alleen levert geen lijst met alle oplossingen. Een voorbeeld is Grovers zoekalgoritme voor een ongestructureerd zoekprobleem. Onder de gebruikelijke voorwaarden daalt het benodigde aantal aanroepen van een geschikte controlefunctie van orde N naar orde sqrt(N). Die controlefunctie heet een orakel. Voor N = 256 is sqrt(N) = 16; voor N = 1024 is dat 32. Deze waarden illustreren de schaalverandering. Ze zijn geen exacte looptijden en houden geen rekening met het bouwen van het orakel, invoeren van gegevens of corrigeren van fouten.", "Bespreek de keuze tussen een schoolverslag opmaken en het gedrag van een molecuul onderzoeken. Voor quantumchemie proberen onderzoekers quantumtoestanden en hun bewerkingen te gebruiken om eigenschappen van moleculen te berekenen. Of dat praktisch voordeel oplevert, hangt af van het probleem, het algoritme, de hardware en de beste klassieke vergelijking. Een gewone tekstverwerker krijgt door zijn taakomschrijving geen quantumvoordeel. Laat leerlingen een onderzoeksclaim verbeteren door te benoemen wat er wordt vergeleken: antwoordkwaliteit, benodigde middelen en omstandigheden. Houd de besproken zoekmachine voor lesdocumenten apart in het gesprek: die voert een klassieke tekstzoekactie uit en past geen Groveralgoritme toe."], "werkvorm": "51-53 minuten zoekalgoritme en schaalvoorbeeld uitleggen; 53-55 minuten berekenen en beperkingen formuleren; 55-56 minuten een toepassing kiezen; 56-57 minuten twee onderbouwde antwoorden bespreken.", "controle": "Betekent sqrt(1024) = 32 dat iedere zoekopdracht 32 keer sneller wordt? Verwacht: nee; dit is een schaalvergelijking voor orakelaanroepen onder voorwaarden, geen garantie voor totale rekentijd.", "beeld": "samenvatting", "theta": 0.0, "phi": 0.0, "regel": 105}, {"start": 57, "einde": 60, "titel": "Afronden en begrip aantonen", "opdrachten": [28, 29, 30], "toelichting": ["Laat leerlingen zonder aantekeningen drie korte antwoorden schrijven. Een amplitude beschrijft een bijdrage aan een toestand; de gekwadrateerde absolute waarde geeft de bijbehorende meetkans. Superpositie betreft een combinatie van basistoestanden. Verstrengeling betreft een gezamenlijke toestand die niet als onafhankelijke deeltoestanden kan worden beschreven. Voor ons zuivere Bellvoorbeeld hebben we dit met twee qubits gezien. Laat leerlingen het verschil dus niet uitsluitend omschrijven als een kwestie van het aantal mogelijke meetuitkomsten.", "Keer terug naar de openingszin en de uitspraak over alle antwoorden tegelijk. Vraag welke berekening een verbeterde uitleg ondersteunt. H, H en H, Z, H zijn geschikte voorbeelden: de fase bepaalt hoe amplitudes bij een volgende bewerking optellen. Sluit af met een concrete terugblik: je kunt nu een klein circuit volgen en een voorspelling controleren. Verzamel de antwoorden. Wie amplitude en kans verwart, krijgt het breukenvoorbeeld als herhaling; wie daarmee klaar is, verklaart waarom een tussenmeting het H, H-experiment verandert."], "werkvorm": "57-58 minuten drie afsluitende antwoorden schrijven; 58-59 minuten met een buur vergelijken; 59-60 minuten de openingsvraag klassikaal beantwoorden en antwoorden inleveren.", "controle": "Noem een mogelijkheid en een beperking. Verwacht bijvoorbeeld: geschikte quantumalgoritmen kunnen bepaalde zoek- of simulatieproblemen anders aanpakken; meten levert afzonderlijke uitkomsten en praktisch voordeel vereist een passende vergelijking.", "beeld": "samenvatting", "theta": 0.0, "phi": 0.0, "regel": 113}]}</script>
+  <script>"use strict";
+(() => {
+  const data = JSON.parse(document.getElementById("lesgegevens").textContent);
+  const el = id => document.getElementById(id);
+  const tekst = (id, waarde) => { el(id).textContent = waarde; };
+  const fases = data.fasen;
+  const klok = s => Math.floor(s / 60).toString().padStart(2, "0") + ":" + Math.floor(s % 60).toString().padStart(2, "0");
+  let tijd = 0, actief = -1, speelt = false, weergave = "model", vorigeFrame = null;
+  const canvas = el("beeld"), ctx = canvas.getContext("2d");
+  let breedte = 600, hoogte = 290, yaw = -0.45, pitch = 0.23, sleep = null;
+  let kader = null;
+
+  tekst("voorblad-titel", data.velden.Titel);
+  tekst("les-titel", data.velden.Titel);
+  document.title = data.velden.Titel + " · Ophangen";
+  tekst("voorblad-doel", data.velden.Leerdoel);
+  const meta = data.velden.Vak + " · " + data.velden.Niveau + " · " + data.velden.Duur;
+  tekst("voorblad-meta", meta);
+  tekst("les-meta", data.velden.Duur + " / " + fases.length + " fasen");
+  el("tijd").max = data.duur;
+  const faseknoppen = fases.map((fase, index) => {
+    const knop = document.createElement("button");
+    knop.className = "faseknop";
+    const nummer = document.createElement("span"); nummer.className = "nummer"; nummer.textContent = String(index + 1).padStart(2, "0");
+    const label = document.createElement("span"); label.textContent = fase.titel;
+    const duur = document.createElement("small"); duur.textContent = fase.start + "–" + fase.einde + " min";
+    label.append(duur); knop.append(nummer, label);
+    knop.addEventListener("click", () => gaNaar(fase.start * 60));
+    el("fasen").append(knop);
+    return knop;
+  });
+
+  function faseBij(seconden) {
+    const index = fases.findIndex(f => seconden < f.einde * 60);
+    return index < 0 ? fases.length - 1 : index;
+  }
+  function zetSpeelt(waarde) {
+    speelt = waarde;
+    vorigeFrame = null;
+    tekst("afspelen", speelt ? "Pauzeren" : "Afspelen");
+    tekst("status", tijd >= data.duur ? "Les afgerond" : speelt ? "Afspelen" : "Gepauzeerd");
+    if (speelt && kader === null) kader = requestAnimationFrame(tik);
+  }
+  function gaNaar(waarde) {
+    zetSpeelt(false);
+    tijd = Math.max(0, Math.min(data.duur, waarde));
+    ververs();
+  }
+  function ververs() {
+    const index = faseBij(tijd), fase = fases[index];
+    if (index !== actief) {
+      actief = index;
+      tekst("fase-label", "FASE " + String(index + 1).padStart(2, "0") + " / " + String(fases.length).padStart(2, "0"));
+      tekst("fase-titel", fase.titel);
+      tekst("werkvorm", fase.werkvorm);
+      tekst("controle", fase.controle);
+      el("toelichting").replaceChildren(...fase.toelichting.map(t => {
+        const p = document.createElement("p"); p.textContent = t; return p;
+      }));
+      el("opdrachten").replaceChildren(...fase.opdrachten.map(n => {
+        const opdracht = data.instructies.find(i => i.nummer === n);
+        const li = document.createElement("li"); li.value = n; li.textContent = opdracht.tekst; return li;
+      }));
+      faseknoppen.forEach((knop, i) => {
+        if (i === index) knop.setAttribute("aria-current", "step");
+        else knop.removeAttribute("aria-current");
+      });
+      el("docent").open = false;
+      document.querySelector(".inhoud").scrollTop = 0;
+      beeldInfo();
+    }
+    tekst("klok", klok(tijd) + " / " + klok(data.duur));
+    tekst("voortgang", fase.start + "–" + fase.einde + " MIN · " + Math.round(100 * Math.min(1, (tijd / 60 - fase.start) / (fase.einde - fase.start))) + "%");
+    el("tijd").value = Math.floor(tijd);
+    el("tijd").setAttribute("aria-valuetext", klok(tijd) + ", " + fase.titel);
+    el("vorige").disabled = tijd === 0;
+    el("volgende").disabled = tijd >= data.duur;
+    tekst("status", tijd >= data.duur ? "Les afgerond" : speelt ? "Afspelen" : "Gepauzeerd");
+    teken();
+  }
+  function kans(label, waarde) {
+    const div = document.createElement("div"); div.className = "kans";
+    div.textContent = label + "  " + (100 * waarde).toFixed(1).replace(".", ",") + "%";
+    const meter = document.createElement("meter"); meter.min = 0; meter.max = 1; meter.value = waarde;
+    meter.setAttribute("aria-label", label); div.append(meter); el("kansen").append(div);
+  }
+  function beeldInfo() {
+    const fase = fases[actief];
+    el("kansen").replaceChildren();
+    let label, uitleg;
+    if (weergave === "structuur" || fase.beeld === "samenvatting") {
+      label = "Lesfasen in ruimte en tijd";
+      uitleg = "De horizontale as is de lestijd. Hoogte en diepte scheiden de fasen voor de leesbaarheid; ze zijn geen meetwaarden. De stip op de as volgt de tijdschuif.";
+    } else if (fase.beeld === "bloch") {
+      const theta = fase.theta * Math.PI / 180;
+      label = "Blochbol · θ = " + fase.theta + "° · φ = " + fase.phi + "°";
+      uitleg = "De pijl beschrijft één zuivere qubittoestand: x = sin(θ)cos(φ), y = sin(θ)sin(φ), z = cos(θ). De balken geven kansen bij een Z-meting. De lestijd kiest een voorbeeldtoestand; tussen fasen wordt geen fysieke poortbeweging gesimuleerd.";
+      kans("P(0)", Math.cos(theta / 2) ** 2); kans("P(1)", Math.sin(theta / 2) ** 2);
+    } else if (fase.beeld === "bell") {
+      label = "Bellpaar · (|00⟩ + |11⟩) / √2";
+      uitleg = "Beide lokale toestanden liggen in het midden van hun Blochbol: afzonderlijk maximaal gemengd. De bollen zijn geen volledige voorstelling van het verstrengelde paar. De formule en gezamenlijke Z-meetkansen beschrijven de correlatie; er wordt geen signaal overgedragen.";
+      kans("P(00)", .5); kans("P(01)", 0); kans("P(10)", 0); kans("P(11)", .5);
+    } else {
+      label = "Klassieke informatie · 0 of 1";
+      uitleg = "Twee verschillende klassieke bitwaarden. De verbindingslijn ordent de mogelijkheden en stelt geen superpositie voor. Via Lesstructuur bekijk je de fasen in 3D.";
+    }
+    tekst("beeld-tekst", label); tekst("beeld-uitleg", uitleg);
+    canvas.setAttribute("aria-label", label + ". " + uitleg);
+  }
+
+  // Echte 3D-coordinaten worden geroteerd en met perspectief op canvas geprojecteerd.
+  function project(p, schaal = 105, midden = [breedte / 2, hoogte / 2]) {
+    const x = Math.cos(yaw) * p[0] + Math.sin(yaw) * p[1];
+    const diepte = -Math.sin(yaw) * p[0] + Math.cos(yaw) * p[1];
+    const z = Math.cos(pitch) * p[2] - Math.sin(pitch) * diepte;
+    const d = Math.sin(pitch) * p[2] + Math.cos(pitch) * diepte;
+    const factor = 5 / (5 + d);
+    return [midden[0] + x * schaal * factor, midden[1] - z * schaal * factor, d];
+  }
+  function lijn(punten, kleur, dikte = 1, schaal = 105, midden) {
+    ctx.beginPath();
+    punten.forEach((p, i) => { const q = project(p, schaal, midden); if (!i) ctx.moveTo(q[0], q[1]); else ctx.lineTo(q[0], q[1]); });
+    ctx.strokeStyle = kleur; ctx.lineWidth = dikte; ctx.stroke();
+  }
+  function punt(p, label, kleur = "#b7ebba", schaal = 105, midden, straal = 5) {
+    const q = project(p, schaal, midden);
+    ctx.beginPath(); ctx.arc(q[0], q[1], straal, 0, Math.PI * 2);
+    ctx.fillStyle = kleur; ctx.fill();
+    if (label) { ctx.font = "12px system-ui"; ctx.textAlign = "left"; ctx.fillText(label, q[0] + 10, q[1] - 8); }
+  }
+  function bol(schaal, midden, gemengd = false) {
+    for (let ring = 1; ring < 6; ring++) {
+      const theta = Math.PI * ring / 6;
+      lijn(Array.from({length: 65}, (_, i) => {
+        const phi = i * Math.PI / 32; return [Math.sin(theta) * Math.cos(phi), Math.sin(theta) * Math.sin(phi), Math.cos(theta)];
+      }), "#334d5a", 1, schaal, midden);
+    }
+    for (let ring = 0; ring < 6; ring++) {
+      const phi = ring * Math.PI / 6;
+      lijn(Array.from({length: 65}, (_, i) => {
+        const theta = i * Math.PI / 32; return [Math.sin(theta) * Math.cos(phi), Math.sin(theta) * Math.sin(phi), Math.cos(theta)];
+      }), "#334d5a", 1, schaal, midden);
+    }
+    [[1.25, 0, 0], [0, 1.25, 0], [0, 0, 1.25]].forEach((p, i) => {
+      lijn([p.map(v => -v), p], "#58747e", 1, schaal, midden);
+      punt(p, ["x", "y", "z · |0⟩"][i], "#9ab4bd", schaal, midden, 2);
+    });
+    punt([0, 0, -1], "|1⟩", "#9ab4bd", schaal, midden, 2);
+    if (gemengd) punt([0, 0, 0], "I / 2", "#edca95", schaal, midden, 7);
+  }
+  function structuur() {
+    const schaal = Math.min(breedte / 7.4, hoogte / 2.8);
+    const punten = fases.map((f, i) => [
+      -2.6 + 5.2 * ((f.start + f.einde) * 30 / data.duur),
+      .62 * Math.sin(i * 1.5), .6 * Math.cos(i * 1.5) + .1
+    ]);
+    lijn([[-2.8, 0, -1], [2.8, 0, -1]], "#63838b", 1, schaal);
+    punt([-2.8, 0, -1], "0 min", "#a8b9bc", schaal, undefined, 2);
+    punt([2.8, 0, -1], data.duur / 60 + " min", "#a8b9bc", schaal, undefined, 2);
+    lijn(punten, "#58747e", 2, schaal);
+    punten.forEach((p, i) => {
+      lijn([p, [p[0], 0, -1]], "#2f454f", 1, schaal);
+      punt(p, String(i + 1).padStart(2, "0"), i === actief ? "#b7ebba" : i < actief ? "#77959c" : "#547180", schaal, undefined, i === actief ? 9 : 5);
+    });
+    punt([-2.6 + 5.2 * tijd / data.duur, 0, -1], "", "#b7ebba", schaal, undefined, 6);
+  }
+  function teken() {
+    if (!ctx || !el("les").open) return;
+    ctx.clearRect(0, 0, breedte, hoogte);
+    const fase = fases[actief];
+    if (!fase) return;
+    if (weergave === "structuur" || fase.beeld === "samenvatting") { structuur(); return; }
+    const schaal = Math.min(hoogte / 2.9, breedte / 4);
+    if (fase.beeld === "bloch") {
+      bol(schaal, undefined);
+      const theta = fase.theta * Math.PI / 180, phi = fase.phi * Math.PI / 180;
+      const p = [Math.sin(theta) * Math.cos(phi), Math.sin(theta) * Math.sin(phi), Math.cos(theta)];
+      lijn([[0, 0, 0], p], "#b7ebba", 3.5, schaal);
+      punt(p, "|ψ⟩", "#b7ebba", schaal, undefined, 7);
+    } else if (fase.beeld === "bell") {
+      const maat = Math.min(hoogte / 3.7, breedte / 5.8);
+      bol(maat, [breedte * .27, hoogte * .47], true);
+      bol(maat, [breedte * .72, hoogte * .47], true);
+      ctx.font = "13px system-ui"; ctx.textAlign = "center"; ctx.fillStyle = "#edca95";
+      ctx.fillText("qubit A", breedte * .27, hoogte - 18); ctx.fillText("qubit B", breedte * .72, hoogte - 18);
+    } else {
+      lijn([[-1.4, 0, 0], [1.4, 0, 0]], "#45616c", 2, schaal);
+      punt([-1.4, 0, 0], "0", "#b7ebba", schaal, undefined, 14);
+      punt([1.4, 0, 0], "1", "#edca95", schaal, undefined, 14);
+      ctx.font = "14px system-ui"; ctx.textAlign = "center"; ctx.fillStyle = "#a8b9bc";
+      ctx.fillText("Twee mogelijke bitwaarden", breedte / 2, hoogte - 30);
+    }
+  }
+  function formaat() {
+    const rect = canvas.getBoundingClientRect();
+    if (!rect.width || !rect.height || !ctx) return;
+    breedte = rect.width; hoogte = rect.height;
+    const ratio = Math.min(window.devicePixelRatio || 1, 2);
+    canvas.width = Math.round(breedte * ratio); canvas.height = Math.round(hoogte * ratio);
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0); teken();
+  }
+  function tik(nu) {
+    kader = null;
+    if (!speelt || !el("les").open) return;
+    if (vorigeFrame !== null) tijd = Math.min(data.duur, tijd + (nu - vorigeFrame) / 1000 * Number(el("snelheid").value));
+    vorigeFrame = nu;
+    if (tijd >= data.duur) zetSpeelt(false);
+    ververs();
+    if (speelt) kader = requestAnimationFrame(tik);
+  }
+  el("afspelen").addEventListener("click", () => { if (tijd >= data.duur) gaNaar(0); zetSpeelt(!speelt); });
+  el("tijd").addEventListener("input", event => gaNaar(Number(event.target.value)));
+  el("herstart").addEventListener("click", () => gaNaar(0));
+  el("vorige").addEventListener("click", () => gaNaar(fases[Math.max(0, actief - 1)].start * 60));
+  el("volgende").addEventListener("click", () => gaNaar(actief < fases.length - 1 ? fases[actief + 1].start * 60 : data.duur));
+  el("snelheid").addEventListener("change", () => { vorigeFrame = null; });
+  for (const naam of ["model", "structuur"]) el(naam).addEventListener("click", () => {
+    weergave = naam;
+    el("model").setAttribute("aria-pressed", String(naam === "model"));
+    el("structuur").setAttribute("aria-pressed", String(naam === "structuur"));
+    beeldInfo(); teken();
+  });
+  el("camera").addEventListener("click", () => { yaw = -.45; pitch = .23; teken(); });
+  canvas.addEventListener("pointerdown", e => { sleep = [e.clientX, e.clientY]; canvas.setPointerCapture(e.pointerId); });
+  canvas.addEventListener("pointermove", e => {
+    if (!sleep) return;
+    yaw += (e.clientX - sleep[0]) * .008;
+    pitch = Math.max(-1.1, Math.min(1.1, pitch + (e.clientY - sleep[1]) * .008));
+    sleep = [e.clientX, e.clientY]; teken();
+  });
+  canvas.addEventListener("pointerup", () => { sleep = null; });
+  canvas.addEventListener("pointercancel", () => { sleep = null; });
+  el("sluiten").addEventListener("click", () => el("les").close());
+  el("les").addEventListener("close", () => { zetSpeelt(false); el("openen").focus(); });
+  el("les").addEventListener("cancel", () => zetSpeelt(false));
+  el("openen").addEventListener("click", () => { el("les").showModal(); formaat(); el("afspelen").focus(); });
+  document.addEventListener("visibilitychange", () => { if (document.hidden) zetSpeelt(false); });
+  new ResizeObserver(formaat).observe(canvas);
+  ververs();
+  el("les").showModal(); formaat(); el("afspelen").focus();
+})();
+</script>
+</body>
+</html>

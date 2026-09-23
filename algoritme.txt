@@ -1,0 +1,387 @@
+Ophangen is een programma dat gestructureerde Nederlandstalige lesdocumenten en
+hoorcollegetranscripten verwerkt tot controleerbare gegevens, interactieve
+presentaties en tijdstaplogs. Het systeem verbindt de inhoud van een tekst met
+een tijdsindeling en, waar het document dat voorschrijft, met een wiskundig
+model. De gebruiker kan daardoor dezelfde bron bekijken als leesbare tekst, als
+geordende les, als bewegende modelweergave en als reeks vastgelegde toestanden.
+De bronbestanden blijven het uitgangspunt. De gegenereerde HTML-bestanden
+bevatten een afgeleide weergave van de gegevens die bij het exporteren zijn
+ingelezen.
+
+Het programma kent twee documentsoorten. Een instructieles bestaat uit
+documentgegevens en genummerde opdrachten. Zo'n les kan daarnaast een expliciete
+tijdlijn bevatten waarin opdrachten aan lesfasen worden gekoppeld. Een
+transcript bestaat uit documentgegevens en opeenvolgende fragmenten met
+gesproken tekst, eventuele bordformules, symboolverwijzingen en pauzes. Bij een
+transcript ontstaat de tijdlijn uit de hoeveelheid gesproken tekst en het
+opgegeven spreektempo. De documentsoort bepaalt dus zowel de manier waarop de
+inhoud wordt gecontroleerd als de manier waarop de tijdsindeling wordt
+opgebouwd.
+
+De uitvoering begint bij main.py. Dit startbestand draagt de opgegeven
+commandoregel over aan de CLI, de tekstuele bediening van het programma. Het
+Bash-script run.sh kiest daarvoor expliciet de Python-interpreter uit de
+virtuele omgeving van Ophangen. Het maakt hierbij niet uit vanuit welke map het
+script wordt aangeroepen; de plaats van de virtuele omgeving wordt afgeleid van
+de plaats van het script. Bestandsnamen die de gebruiker als argument opgeeft,
+blijven relatief aan de huidige werkmap. Het afzonderlijke script setup.sh
+gebruikt uv en het vastgelegde lockbestand om de projectomgeving en benodigde
+pakketten klaar te zetten. Voor LaTeX-verwerking gebruikt de logexport een
+lokaal meegeleverde versie van latex2mathml.
+
+De CLI bepaalt eerst welke bewerking is gevraagd en welke argumenten daarbij
+horen. Met controleer wordt een document op formele geldigheid onderzocht.
+Interpreteer toont de ingelezen inhoud in de door het programma herkende
+volgorde. Visualiseer maakt een zelfstandige HTML-presentatie. Toestand berekent
+de numerieke en symbolische modeltoestand op een gekozen tijdstip. Log schrijft
+een HTML-bestand met een reeks opgeslagen tijdstappen. Zoek doorzoekt
+tekstbestanden in een map, terwijl woordenboek de beschikbare werkwoorden,
+begrippen en symbolen toont. Deze bewerkingen gebruiken zoveel mogelijk dezelfde
+inlees- en controleonderdelen.
+
+De objectgeoriënteerde opbouw maakt onderscheid tussen gegevens en bewerkingen.
+Een Document-object bewaart de oorspronkelijke tekst, het bestandspad, de
+documentvelden, de inhoudsonderdelen en de gevonden meldingen. Een Instructie
+bevat een nummer, een opdrachttekst en het oorspronkelijke regelnummer. Een Fase
+beschrijft een gepland lesonderdeel met begin- en eindtijd, toegewezen
+opdrachten en aanvullende lesgegevens. Een TranscriptFragment bewaart gesproken
+alinea's, formules, symbolen en een pauze. Andere objecten voeren de
+werkzaamheden uit: DocumentParser leest de structuur, DocumentValidator
+controleert de regels, TranscriptAnalyse berekent de spreektijden,
+CoherenteOscillator berekent het model, LesPresentatie bouwt de presentatie en
+TijdstapLog verzorgt de logexport.
+
+Voordat de documentinhoud wordt beoordeeld, leest het programma het woordenboek.
+Het woordenboek onderscheidt werkwoorden, begrippen en symbolen. Een bestaande
+regel met alleen een woord en een betekenis wordt als werkwoorddefinitie
+gelezen. Een uitgebreidere regel vermeldt ook de categorie. Werkwoorden en
+begrippen worden intern hoofdletterongevoelig opgeslagen, zodat verschillende
+schrijfwijzen met hoofdletters dezelfde ingang opleveren. Bij symbolen blijven
+hoofdletters behouden, omdat bijvoorbeeld de hoofdletter I een andere betekenis
+kan hebben dan de kleine letter i. Lege betekenissen, ongeldige regels en
+dubbele ingangen binnen dezelfde categorie worden afgewezen.
+
+Het meegeleverde woordenboek bevat 353 ingangen: 75 werkwoorden, 226 begrippen
+en 52 symbolen. Deze verzameling ondersteunt de formele instructietaal en de
+wetenschappelijke begrippen die in de voorbeelden worden gebruikt. Het
+woordenboek is geen volledige inventaris van de Nederlandse taal. Vrije alinea's
+hoeven daarom niet uitsluitend uit opgenomen woorden te bestaan. Bij instructies
+wordt gecontroleerd of het eerste werkwoord bekend is. Bij transcripten wordt
+gecontroleerd of expliciet gedeclareerde symbolen in het symbolenregister
+voorkomen. Een definitie in het woordenboek krijgt daarmee een duidelijke
+functie in de verwerking, zonder dat het programma beweert iedere Nederlandse
+zin inhoudelijk te begrijpen.
+
+Een document wordt als UTF-8 gelezen. Een eventuele bytevolgordemarkering aan
+het begin van het bestand wordt geaccepteerd. De parser doorloopt de tekst regel
+voor regel en onthoudt in welk onderdeel hij zich bevindt. Eerst worden
+documentvelden verwacht. Daarna kunnen, afhankelijk van de documentsoort,
+instructies, een tijdlijn of transcriptfragmenten volgen. Lege regels en
+volledige commentaarregels die met een hekje beginnen worden overgeslagen. De
+aanduiding Einde. sluit het document af; daarna zijn alleen lege regels en
+commentaar toegestaan. Elke inhoudelijke regel wordt in de context van de
+actieve sectie uitgelegd.
+
+Bij een gewone veldregel wordt de eerste dubbele punt gebruikt om de veldnaam
+van de waarde te scheiden. De parser controleert of de veldnaam op die plaats is
+toegestaan en of het veld niet ongeoorloofd wordt herhaald. Een genummerde
+opdracht wordt omgezet in een Instructie-object. Een nieuwe fase of een nieuw
+transcriptfragment maakt een bijbehorend gegevensobject aan, waarna volgende
+regels daaraan worden toegevoegd. Bij fouten bewaart de parser waar mogelijk een
+melding met een code en een regelnummer en gaat hij verder. Daardoor kan één
+controleactie meerdere problemen in een bestand zichtbaar maken.
+
+Na het lezen onderzoekt de validator de samenhang van de gegevens. Het programma
+controleert onder meer verplichte velden, toegestane waarden, nummering,
+verwijzingen en tijdsdekking. Een document geldt als geldig wanneer na deze
+verwerking geen meldingen overblijven. Wanneer hetzelfde document nogmaals wordt
+gevalideerd, worden eerdere validatiemeldingen vervangen, terwijl meldingen over
+de oorspronkelijke leesstructuur behouden blijven. Hierdoor veroorzaakt herhaald
+controleren geen steeds langer wordende lijst van dezelfde fouten.
+
+De huidige taal ondersteunt Nederlands, Engels, Wiskunde B, Natuurkunde en
+Informatica als vakken en 4 vwo en wo master als niveaus. De opgegeven duur moet
+tussen één en 480 minuten liggen. Bij instructielessen zijn titel, vak, niveau,
+onderwerp, leerdoel en duur verplicht. De opdrachten worden vanaf één zonder
+onderbrekingen genummerd. Iedere opdracht begint met een hoofdletter en een
+bekend instructiewerkwoord, gevolgd door opdrachttekst, en eindigt met een
+toegestaan leesteken. Verwijzingen tussen vierkante haken moeten naar eerdere
+bestaande opdrachten wijzen. De overige opdrachttekst blijft vrije tekst.
+
+Als een instructieles een tijdlijn bevat, moet deze bij minuut nul beginnen.
+Elke fase moet een positieve duur hebben en direct aansluiten op de vorige. De
+laatste fase moet precies eindigen op de totale lesduur. Iedere opdracht moet
+precies eenmaal aan een fase zijn toegewezen. Bovendien moet de geplande
+uitvoeringsvolgorde rekening houden met de verwijzingen tussen opdrachten: een
+benodigde eerdere opdracht mag niet pas later worden ingepland. De validator
+controleert dit zowel tussen fasen als binnen de opdrachtenvolgorde van een
+fase. Uitleg, werkvorm, controletekst en visueel beeld behoren tot de verplichte
+fasegegevens.
+
+Bij een transcript zijn een leerdoel en leerlingopdrachten niet vereist. De
+vermelding Soort: transcript activeert de transcriptregels. Het document moet
+dan een spreektempo, een ondersteund model, een beginpositie, een beginimpuls en
+een modeltempo bevatten. De fragmenten worden vanaf één genummerd en hebben elk
+een titel, minstens één niet-lege gesproken alinea en een expliciete pauze.
+Bordformules kunnen afzonderlijk worden opgenomen. Een optionele symbolenregel
+verwijst naar unieke bekende symboolsleutels. Het mengen van
+transcriptfragmenten met een instructiesectie of een handmatig opgegeven
+lestijdlijn wordt afgewezen.
+
+De tijdsberekening van een transcript is deterministisch. Voor ieder fragment
+worden de gesproken alinea's samengevoegd en op witruimte gesplitst. Elk zo
+gevonden tekstdeel telt als één woord. Het aantal woorden wordt vermenigvuldigd
+met zestig en gedeeld door het spreektempo in woorden per minuut. Dat levert de
+spreektijd in seconden op. De titels, bordformules en symbolenlijsten tellen
+niet mee. Aan de spreektijd wordt de expliciete pauze van het fragment
+toegevoegd. De begintijd van het volgende fragment volgt uit de totale
+hoeveelheid voorafgaande gesproken tekst en de som van de eerdere pauzes.
+
+Voor ieder fragment bewaart de analyse een begintijd, een einde van het
+spreekgedeelte en een einde van het volledige fragment. Daarmee kan de
+presentatie op elk moment bepalen of het fragment nog wordt uitgesproken of dat
+de geplande stilte is begonnen. Het spreektempo moet tussen vijftig en 220
+woorden per minuut liggen. Pauzes moeten eindige, niet-negatieve getallen zijn.
+De totale berekende tijd moet tot op een honderdste seconde overeenkomen met de
+opgegeven collegeduur. Het meegeleverde mastertranscript bevat bijvoorbeeld
+6.594 gesproken woorden. Bij 120 woorden per minuut leveren die 3.297 seconden
+spreektijd op; met 303 seconden pauze ontstaat een planning van precies 3.600
+seconden.
+
+Deze tijdsplanning geeft een afgesproken presentatietempo weer. De werkelijke
+uitspraakduur van een lang woord of een wiskundige formulering kan daarvan
+afwijken. Het programma produceert geen audio en luistert niet naar een spreker.
+De woordmarkering in het transcript volgt de berekende positie in de tekst. De
+ingestelde pauzes maken tijd beschikbaar voor het volgen van redeneringen en
+afleidingen. Wie de tekst, het spreektempo of een pauze verandert, verandert
+daardoor ook de berekende tijdlijn en moet het document opnieuw laten
+controleren en exporteren.
+
+Voor de modelweergave maakt het systeem onderscheid tussen collegetijd en
+modeltijd. De collegetijd bepaalt welk fragment wordt getoond en welk woord
+volgens de planning aan de beurt is. De modeltijd bepaalt de mathematische
+toestand van de oscillator. Het veld Modeltempo verbindt beide door de
+collegetijd in seconden met een vaste factor te vermenigvuldigen. In het
+mastervoorbeeld is die factor 0,01. Op college-minuut vijftien bedraagt de
+collegetijd dus 900 seconden en de modeltijd negen dimensieloze eenheden. Deze
+koppeling is een gekozen schaal voor de demonstratie. Tijdens een ingeplande
+spreekpauze loopt de collegeklok door en ontwikkelt ook het model zich verder.
+De pauzeknop van de presentatie zet beide klokken stil.
+
+Het huidige uitvoerbare dynamische model is een coherente toestand van de
+harmonische oscillator. De berekening gebruikt dimensieloze eenheden waarin de
+gereduceerde constante van Planck, de massa en de hoekfrequentie de waarde één
+hebben. De beginpositie en beginimpuls liggen elk tussen min vier en vier. Het
+modeltempo is groter dan nul en maximaal één. Uit deze beginwaarden en de
+modeltijd berekent het programma de actuele gemiddelde positie en impuls. De
+positie volgt uit de beginpositie maal de cosinus van de modeltijd, vermeerderd
+met de beginimpuls maal de sinus. De impuls volgt uit de beginimpuls maal de
+cosinus, verminderd met de beginpositie maal de sinus.
+
+De quantumtoestand wordt vervolgens beschreven door een complexe parameter die
+uit de gemiddelde positie en impuls wordt samengesteld. De golffunctie heeft een
+Gaussische omhullende rond de actuele gemiddelde positie en een complexe fase
+die afhangt van de impuls, de gekozen plaats en de modeltijd. De implementatie
+neemt ook de globale fase mee. Daardoor kan zij zowel de kansdichtheid als het
+reële en imaginaire deel van de golffunctie correct volgen binnen dit model. De
+globale fase verandert de positiekansdichtheid niet, maar maakt wel deel uit van
+de volledige oplossing die het programma gebruikt.
+
+De varianties van positie en impuls zijn in dit model voortdurend een half. Het
+product van hun standaardafwijkingen is eveneens een half. De gemiddelde energie
+wordt uit de beginpositie en beginimpuls berekend en blijft constant. Ook de
+normalisatie heeft voor de gekozen analytische oplossing een vaste waarde van
+één. Het programma gebruikt gesloten formules om een toestand rechtstreeks op
+een tijdstip te bepalen. Het telt dus geen kleine numerieke veranderingen op om
+van de vorige toestand naar de volgende te komen. De gekozen logstap bepaalt de
+dichtheid van de opgeslagen waarnemingsmomenten, zonder de gebruikte
+oplossingsmethode van de oscillator te veranderen.
+
+De opdracht toestand gebruikt deze modelberekening om waarden in de terminal te
+tonen. Naast positie, impuls, energie, spreidingen en modeltijd kan zij het
+complexe getal van de golffunctie op een gekozen plaats geven. De symbolische
+beschrijving legt vast bij welke operatoren en toestandsformules deze getallen
+horen. Een gebruiker kan een specifieke beschikbare modelformule opvragen,
+bijvoorbeeld die van psi, q, p of de Hamiltoniaan. De formules zijn onderdeel
+van de geïmplementeerde modelklasse. Het programma leidt geen willekeurige
+nieuwe natuurkundige theorie af uit een vrij ingevoerde formule.
+
+Bij het maken van een presentatie kiest de generator het sjabloon dat bij de
+documentsoort hoort. De documentgegevens worden omgezet in een ingebedde
+gegevensstructuur en gecombineerd met de benodigde HTML, opmaak en JavaScript.
+Alles komt in één uitvoerbestand terecht. De browser hoeft daarna geen server te
+raadplegen om de lesgegevens op te halen. Tekst uit het invoerbestand wordt als
+tekst behandeld, en bijzondere tekens in de ingebedde gegevens worden gecodeerd
+zodat zij het scriptgedeelte van het HTML-bestand niet kunnen afsluiten. Een
+bestaande export verandert niet vanzelf wanneer de bron wordt aangepast;
+daarvoor wordt opnieuw gegenereerd.
+
+De presentatie van een instructieles toont de inhoud per lesfase, samen met een
+visueel voorbeeld. Een Blochbol kan een zuivere qubittoestand voorstellen,
+waarbij twee hoeken de richting en de meetkansen bepalen. Het Bellbeeld geeft
+gezamenlijke meetkansen en lokaal gemengde toestanden weer. Een klassiek beeld
+toont mogelijke bitwaarden en een overzichtsbeeld toont de lesstructuur. Deze
+voorbeelden blijven binnen hun fase gelijk. De verandering van lesfase is een
+didactische overgang en stelt op zichzelf geen fysische quantumpoort in werking.
+
+Een transcriptpresentatie opent drie gelijktijdig bedienbare dialoogvensters.
+Het eerste venster bevat het transcript, de fragmentkeuze, de tijdsgegevens en
+een ruimtelijk overzicht van de lesstructuur. Het tweede toont de coherente
+oscillator en de bijbehorende numerieke waarden. Het derde verbindt
+symbooldefinities met de symbolische toestand en de bordformules van het huidige
+fragment. De drie vensters delen dezelfde collegeklok. De formules in deze
+interactieve transcriptpresentatie worden als leesbare symbolische tekst
+getoond. De afzonderlijke logexport verzorgt de omzetting van model-LaTeX naar
+opgemaakte MathML.
+
+Tijdens afspelen meet de browser de werkelijk verstreken tijd tussen
+opeenvolgende verversingen en vermenigvuldigt die met de gekozen
+afspeelsnelheid. Daarmee wordt de collegeklok verhoogd. Vervolgens zoekt de
+presentatie het fragment dat bij de nieuwe tijd hoort, bepaalt zij de positie in
+het spreekgedeelte en berekent zij de actuele modeltoestand. Binnen een
+spreekgedeelte wordt het bijbehorende woord gemarkeerd. Zodra de pauze begint,
+verdwijnt de woordmarkering en wordt de resterende stilte zichtbaar. Automatisch
+meescrollen kan worden ingeschakeld, zodat de gemarkeerde tekst tijdens het
+afspelen in beeld blijft.
+
+De knoppen voor begin, vorige, volgende en de tijdschuif veranderen de
+collegeklok en pauzeren het afspelen. Daardoor kan de gebruiker een toestand
+rustig onderzoeken. Het einde van het college stopt de klok. Het sluiten van een
+transcriptvenster pauzeert de weergave; opnieuw openen bewaart het gekozen
+tijdstip. Escape sluit de drie transcriptvensters en pauzeert eveneens. Wanneer
+het browsertabblad verborgen wordt, pauzeert het programma ook. De camera kan
+onafhankelijk worden gedraaid. Daarmee verandert het gezichtspunt op de grafiek,
+terwijl de wiskundige toestand gelijk blijft.
+
+De modelvisualisatie kan een complexe golf, een kansdichtheid of een
+faseruimtebeeld tonen. Bij de golf zijn de drie assen de plaats, het reële deel
+van de golffunctie en het imaginaire deel. De ruimtelijke tekening gebruikt dus
+verschillende wiskundige grootheden als coördinaten. Het faseruimtebeeld laat de
+klassieke baan van de verwachtingswaarden zien, samen met contouren van de
+Wignerfunctie van de coherente toestand. De ruimtelijke lesstructuur heeft een
+andere betekenis: daar ordent de tijd de lesonderdelen en dienen hoogte en
+diepte vooral om de onderdelen leesbaar uit elkaar te plaatsen.
+
+Voor een HTML-log begint het algoritme met het vaststellen van een begintijd,
+eindtijd en tijdstap. De stap is standaard één collegeseconde en moet positief
+zijn. Het volledige bereik moet binnen de collegeduur liggen. Deze
+planningsgetallen worden eerst als decimale getallen verwerkt, zodat
+bijvoorbeeld opeenvolgende stappen van 0,3 seconde eenduidig kunnen worden
+vastgelegd. De begintijd wordt opgenomen en daarna worden de volgende stappen
+toegevoegd zolang ze binnen het bereik vallen. Als de eindtijd nog ontbreekt,
+wordt die afzonderlijk toegevoegd. Daardoor komt het eindpunt precies eenmaal
+voor en kan de laatste stap korter zijn dan het normale interval.
+
+Een volledig uur met stappen van één seconde levert 3.601 logregels op, omdat
+zowel nul als 3.600 seconden worden vastgelegd. Wanneer begin en einde gelijk
+zijn, ontstaat één record. De implementatie begrenst een logbestand tot maximaal
+10.001 records. Deze grens voorkomt dat een onbedoeld klein interval direct een
+zeer groot uitvoerbestand veroorzaakt. Een groter interval of een kleiner
+tijdvak verkleint het log. De decimale tijd wordt als tekst bewaard, terwijl de
+modelberekening het gekozen tijdstip als normaal Python-kommagetal gebruikt.
+
+Voor iedere logregel zoekt het programma welk fragment of welke lesfase op dat
+tijdstip actief is. Bij een grens tussen twee onderdelen hoort het tijdstip bij
+het nieuwe onderdeel. Bij het volledige einde blijft het laatste onderdeel als
+context beschikbaar en wordt de status afgerond. Voor een transcript wordt
+vervolgens de analytische modeltoestand berekend. Het record bewaart onder meer
+de collegetijd, modeltijd, positie, impuls, complexe toestandsparameter,
+energie, varianties en golffunctiewaarde bij positie nul. Het bewaart ook de
+titel van het actieve onderdeel en de aanduiding of het om een spreekgedeelte of
+stilte gaat.
+
+Bij een instructieles legt het log het bestaande lesbeeld vast. Voor een
+Blochtoestand worden onder meer de hoeken, de vectorcoördinaten, de amplitudes
+en de meetkansen opgenomen. Voor het Bellbeeld worden de gezamenlijke kansen en
+de lokaal gemengde toestand vermeld. Bij een klassiek beeld of een lesoverzicht
+vermeldt het record dat geen specifieke quantumtoestand is vastgelegd. Zo
+blijven de betekenis van een lesillustratie en de betekenis van een dynamische
+modelberekening herkenbaar.
+
+De visualisatie van een logregel wordt tijdens export als zelfstandige SVG
+opgebouwd. Voor de oscillator worden op een reeks plaatsen de complexe
+golffunctie en de kansdichtheid berekend. De golf wordt op een vast vlak
+geprojecteerd en naast de dichtheidsgrafiek geplaatst. Het gezichtspunt en de
+asschalen blijven voor hetzelfde model gelijk over de tijdstappen, zodat
+veranderingen vergelijkbaar blijven. Het log neemt deze SVG rechtstreeks op in
+het record. Het betreft daarmee een vastgelegde grafiek van de toestand en geen
+opname van de toevallige camerastand in een eerder geopend browservenster.
+
+De symbolische logweergave begint met LaTeX-formules die uit de geïmplementeerde
+toestand worden opgebouwd. Algemene vergelijkingen beschrijven het model,
+terwijl formules per record de waarden van de betreffende tijdstap invullen. De
+klasse LatexWeergave laat latex2mathml deze LaTeX tijdens het exporteren
+omzetten naar MathML. Zowel de oorspronkelijke LaTeX als de geparseerde opmaak
+worden bewaard. Veelvoorkomende identieke omzettingen kunnen tijdelijk worden
+hergebruikt, zodat ze niet telkens opnieuw hoeven te worden verwerkt.
+
+Bij de ingevulde formules worden numerieke coëfficiënten op zes decimalen
+afgerond. Daarom gebruikt de weergave waar nodig een benaderingsteken. De
+opgeslagen numerieke gegevens behouden de precisie van de Python-kommagetallen,
+terwijl de zichtbare tabel hoogstens twaalf significante cijfers toont. De
+opgemaakte formule en de numerieke tabel dienen daardoor elk een eigen doel: de
+formule maakt de toestand leesbaar en de tabel maakt de berekende waarden
+controleerbaar. Vrije bordnotities uit het transcript worden niet automatisch
+omgezet in een algemeen symbolisch rekenprobleem.
+
+Het schrijven van het log gebeurt via een tijdelijk bestand naast het gekozen
+uitvoerbestand. Eerst worden de algemene gegevens en de eerste logregel
+voorbereid. Daarna worden de overige records achtereenvolgens geschreven, samen
+met de vaste HTML, opmaak en besturing. Pas wanneer de volledige export is
+afgerond, vervangt het tijdelijke bestand het gekozen doelbestand. Zo blijft een
+bestaand log beschikbaar wanneer de nieuwe generatie halverwege mislukt. De
+uitvoer mag het invoerbestand niet overschrijven.
+
+Wanneer een HTML-log wordt geopend, leest de browser de opgeslagen records en
+toont hij er één tegelijk. De navigatieknoppen, de tijdstapschuif en het
+stapnummer kiezen welk record zichtbaar wordt. De numerieke tabel, SVG en MathML
+worden uit datzelfde record gehaald. Er wordt in deze loglezer geen nieuwe
+modeltoestand berekend. De gebruiker kan bovendien de numerieke waarden uit alle
+opgeslagen records als CSV downloaden. De export is daarmee reproduceerbaar
+vanuit de bron en de gekozen parameters, terwijl het eenmaal geschreven log
+zelfstandig kan worden bekeken.
+
+De zoekfunctie werkt rechtstreeks op bestanden. Zij doorzoekt een opgegeven map
+en de onderliggende mappen op bestanden met de extensie .txt of .invoer, met
+uitzondering van onder meer verborgen paden en symbolische bestandslinks. Elk
+gevonden document wordt ingelezen en gevalideerd. Daarna worden de regels
+hoofdletterongevoelig op de zoektermen onderzocht. Alle termen moeten als
+deeltekst op dezelfde regel voorkomen. Een resultaat vermeldt het bestand, het
+regelnummer, de gevonden tekst en de geldigheid van het hele document. Met de
+optie voor uitsluitend geldige documenten worden andere documenten overgeslagen.
+Leesfouten worden afzonderlijk gerapporteerd.
+
+De terminaluitvoer wordt opgebouwd als een formeel ASCII-rapport. Tekens die
+daar niet rechtstreeks in passen worden omgezet of zichtbaar gecodeerd.
+Foutcodes en regelnummers helpen de gebruiker het probleem in de bron terug te
+vinden. Een afsluitcode van nul betekent dat de gevraagde bewerking is geslaagd,
+een code van één duidt bij documentcontrole op ongeldige invoer en een code van
+twee op bijvoorbeeld een onjuist argument, leesprobleem of configuratiefout.
+Deze codes maken het mogelijk om Ophangen ook vanuit andere scripts te
+gebruiken.
+
+De geldigheidscontrole beoordeelt de afgesproken taalstructuur, de ingevulde
+waarden, de verwijzingen en de tijdsindeling. Volledige Nederlandse spelling, de
+waarheid van een natuurkundige uitspraak en de didactische geschiktheid van een
+hoorcollege vallen buiten deze controle. Ook het dynamische model heeft een
+vastgelegde reikwijdte: het rekent de geïmplementeerde coherente harmonische
+oscillator uit. Een andere modelnaam of een andere natuurkundige theorie krijgt
+pas uitvoerbaar gedrag wanneer daarvoor daadwerkelijk nieuwe modelcode en
+bijbehorende controles worden toegevoegd.
+
+De beschikbare tests controleren verschillende delen van deze verwerking. De
+Python-tests onderzoeken onder meer geldige en ongeldige documenten,
+tijdsberekening, symboolverwijzingen, modelnormalisatie, energiebehoud, de
+Schrödingervergelijking en de inhoud van exports. De browsertests controleren de
+gegenereerde pagina's, de initialisatie van JavaScript, de knoppen, de
+synchronisatie van toestanden en de weergave van SVG en MathML. Voor een
+wijziging aan een HTML-sjabloon zijn juist die browsercontroles relevant, omdat
+een correcte Python-export nog niet garandeert dat ieder browserscript
+uitvoerbaar is.
+
+De samenhang van het systeem ligt in het hergebruik van dezelfde gecontroleerde
+brongegevens. Een tijdstip verwijst naar een bepaald tekstonderdeel; datzelfde
+tijdstip kan via het modeltempo een modeltoestand opleveren. De presentatie
+maakt deze verbinding interactief, terwijl het log haar per gekozen tijdstap
+vastlegt. Daardoor is na te gaan welke tekstcontext, numerieke waarden,
+grafische voorstelling en symbolische beschrijving bij elkaar horen.

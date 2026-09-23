@@ -1,0 +1,22 @@
+version = 1
+revision = 3
+requires-python = ">=3.11"
+
+[[package]]
+name = "latex2mathml"
+version = "3.81.1"
+source = { path = "vendor/latex2mathml-3.81.1-py3-none-any.whl" }
+wheels = [
+    { filename = "latex2mathml-3.81.1-py3-none-any.whl", hash = "sha256:c337668441b71c819b6733905a8058ba9a9d767bae11a0c5fdacb3aff31361bd" },
+]
+
+[[package]]
+name = "ophangen"
+version = "1.0.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "latex2mathml" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "latex2mathml", path = "vendor/latex2mathml-3.81.1-py3-none-any.whl" }]

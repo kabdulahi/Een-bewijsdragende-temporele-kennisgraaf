@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ophangen · Lespresentatie</title>
+  <style>/*__STIJL__*/</style>
+</head>
+<body>
+  <main class="voorblad">
+    <p class="merk">OPHANGEN <span> / INTERACTIEF COLLEGE</span></p>
+    <h1 id="voorblad-titel">Lespresentatie</h1>
+    <p id="voorblad-doel"></p>
+    <p id="voorblad-meta" class="muted"></p>
+    <button id="openen" class="primair">Open de lespresentatie ↗</button>
+    <p class="voetnoot">Een lesplan in ruimte en tijd. Werkt volledig offline.</p>
+  </main>
+  <dialog id="les" aria-labelledby="les-titel">
+    <header class="kop">
+      <div><p class="merk">OPHANGEN <span> / LESATELIER</span></p><h1 id="les-titel"></h1></div>
+      <button id="sluiten" class="klein" aria-label="Sluit de lespresentatie">Sluiten ×</button>
+    </header>
+    <div class="werkruimte">
+      <aside class="programma" aria-label="Lesprogramma">
+        <p class="overline">HET PROGRAMMA</p>
+        <p id="les-meta" class="muted"></p>
+        <nav id="fasen" aria-label="Ga naar een lesfase"></nav>
+        <p class="voetnoot">Kies een fase of verplaats de tijdschuif. De les begint gepauzeerd.</p>
+      </aside>
+      <section class="inhoud">
+        <div class="fasekop"><span id="fase-label" class="overline"></span><span id="voortgang"></span></div>
+        <h2 id="fase-titel"></h2>
+        <div class="beeldkaart">
+          <div class="beeldkop"><div role="group" aria-label="Weergave" class="schakelaar"><button id="model" aria-pressed="true">3D-model</button><button id="structuur" aria-pressed="false">Lesstructuur</button></div><button id="camera" class="klein">Herstel camera</button></div>
+          <canvas id="beeld" role="img" aria-label="Driedimensionale lesvisualisatie"></canvas>
+          <div class="beeldvoet"><span id="beeld-tekst"></span><span class="muted">Sleep om te draaien</span></div>
+          <div id="kansen" class="kansen" aria-label="Meetkansen"></div>
+          <p id="beeld-uitleg" class="voetnoot"></p>
+        </div>
+        <section class="uitleg"><h3>Uitleg en voorbeelden</h3><div id="toelichting"></div></section>
+        <section class="werkvorm"><h3>Werkvorm en tempo</h3><p id="werkvorm"></p></section>
+        <section><h3>Opdrachten</h3><ol id="opdrachten"></ol></section>
+        <details id="docent"><summary>Controlevraag en antwoord voor de docent</summary><p id="controle"></p></details>
+      </section>
+    </div>
+    <footer class="bediening">
+      <div class="tijdregel"><label for="tijd">Lestijd <output id="klok" for="tijd">00:00 / 60:00</output></label><span id="status" role="status" aria-live="polite">Gepauzeerd</span></div>
+      <input id="tijd" type="range" min="0" step="1" value="0" aria-label="Lestijd in seconden">
+      <div class="knoppen"><div><button id="herstart" aria-label="Ga terug naar het begin">↺ Begin</button><button id="vorige">← Vorige</button><button id="afspelen" class="primair">Afspelen</button><button id="volgende">Volgende →</button></div><label class="snelheid">Tempo <select id="snelheid"><option value="1">1× · lestempo</option><option value="10">10× · overzicht</option><option value="60">60× · voorvertoning</option></select></label></div>
+    </footer>
+  </dialog>
+  <noscript>Schakel JavaScript in om de tijdlijn en 3D-presentatie te bedienen. De volledige les staat ook in het invoerbestand.</noscript>
+  <script id="lesgegevens" type="application/json">__LESGEGEVENS__</script>
+  <script>/*__SCRIPT__*/</script>
+</body>
+</html>

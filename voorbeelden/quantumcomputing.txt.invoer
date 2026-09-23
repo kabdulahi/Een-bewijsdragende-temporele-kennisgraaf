@@ -1,0 +1,120 @@
+Titel: Quantumcomputing begrijpen: van bit tot verstrengeling
+Vak: Informatica
+Niveau: 4 vwo
+Onderwerp: Qubits, meetkansen, quantumpoorten, interferentie en verstrengeling
+Leerdoel: Je kunt meetkansen berekenen, eenvoudige quantumcircuits volgen, een Blochbol lezen en mogelijkheden en beperkingen van quantumcomputing onderbouwen.
+Duur: 60 minuten
+
+Instructies:
+1. Schrijf in een zin op wat je denkt dat een quantumcomputer bijzonder maakt.
+2. Kies bij de uitspraak "Een quantumcomputer geeft alle mogelijke antwoorden tegelijk terug" tussen juist en onjuist en bewaar je argument.
+3. Noem een berekening die je dagelijks aan een gewone computer overlaat.
+4. Geef alle verschillende rijtjes die je met drie bits kunt vormen.
+5. Bereken met [4] het aantal mogelijke rijtjes voor drie bits en voorspel het aantal voor vijf bits.
+6. Leg uit waarom een onbekende klassieke bitwaarde niet automatisch een quantumtoestand is.
+7. Bereken voor de amplitudes a = 3/5 en b = 4/5 de meetkansen op 0 en 1.
+8. Controleer of de amplitudes a = 1/2 en b = 1/2 samen een genormaliseerde qubittoestand beschrijven.
+9. Vergelijk de meetkansen bij a = 3/5, b = 4/5 met die bij a = 3/5, b = -4/5.
+10. Teken een Blochbol en plaats de toestanden |0>, |1> en |+> op de juiste positie.
+11. Bereken de meetkansen bij theta = 60 graden met P(0) = cos(theta/2)^2 en P(1) = sin(theta/2)^2.
+12. Beschrijf het verschil tussen het draaien van de camera en het veranderen van de quantumtoestand.
+13. Bepaal de eindtoestand van |0> na eerst X en daarna X.
+14. Bereken de amplitudes van |0> na eerst H en daarna H met H(a,b) = ((a+b)/sqrt(2), (a-b)/sqrt(2)).
+15. Teken het circuit uit [14] van links naar rechts met een meting aan het einde.
+16. Bereken vanuit |0> de opeenvolgende toestanden na H, Z en H, waarbij Z(a,b) = (a,-b).
+17. Vergelijk de eindmeting uit [14] met die uit [16] en verklaar het verschil door interferentie.
+18. Herschrijf de uitspraak "De tweede H-poort gooit opnieuw een munt op" tot een correcte uitleg.
+19. Geef de vier mogelijke meetrijtjes van twee qubits in de volgorde A gevolgd door B.
+20. Bepaal de toestand na H op A en vervolgens CNOT van A naar B, met begintoestand |00>.
+21. Leg uit waarom de Belltoestand uit [20] geen bestuurbare verbinding voor berichten vormt.
+22. Bereken bij de verzonnen meetreeks 00: 47, 01: 3, 10: 2, 11: 48 het percentage gelijke uitkomsten.
+23. Vergelijk [22] met de ideale Bellvoorspelling en onderscheid toevalsvariatie van een uitkomst die ideaal onmogelijk is.
+24. Formuleer een controleproef waarmee je meetfouten beter kunt onderzoeken.
+25. Bereken sqrt(256) en sqrt(1024) en vergelijk deze waarden met 256 en 1024.
+26. Beargumenteer waarom de getallen uit [25] geen gegarandeerde versnelling van een gewone internetzoekopdracht geven.
+27. Kies tussen molecuulsimulatie en het opmaken van een schoolverslag als onderzoekstoepassing en onderbouw je keuze.
+28. Formuleer zonder aantekeningen het verschil tussen een amplitude en een meetkans.
+29. Verklaar in twee zinnen het verschil tussen superpositie en verstrengeling.
+30. Herschrijf je eerste antwoord uit [1] met minstens een mogelijkheid en een beperking van quantumcomputing.
+
+Tijdlijn:
+Fase: 0-5 | Startvraag en route door het college
+Opdrachten: 1, 2, 3
+Toelichting: Vandaag onderzoeken we hoe je met quantumregels informatie verwerkt. Aan het einde moet je een voorspelling kunnen controleren: welke uitkomsten verwacht ik na deze bewerkingen, en waarom? We werken met papier, een pen en een rekenmachine in gradenstand. Voorkennis: breuken, kwadraten, wortels en eenvoudige kansen. Complexe getallen worden genoemd, maar zijn geen rekenvereiste. Spreek af dat leerlingen bij een onbekend begrip een vraagteken noteren; na elk blok is ruimte om dit te bespreken.
+Toelichting: Laat iedereen eerst zelfstandig de openingszin opschrijven. Verzamel daarna twee verschillende verwachtingen op het bord. Bewaar de uitspraak over alle antwoorden tegelijk voor het einde; laat nu vooral de argumenten horen. Kondig de route aan: bits, qubits, de Blochbol, poorten, interferentie, twee qubits en toepassingen. Bij iedere stap gebruiken we dezelfde cyclus: voorspellen, uitwerken, vergelijken, verklaren. De tijdlijn in het venster volgt onze lesminuten. Een overgang naar de volgende fase is een didactische stap; de duur van een lesblok stelt geen fysieke bewerkingstijd van een quantumprocessor voor.
+Werkvorm: 0-1 minuut individueel de startzin schrijven; 1-3 minuten verwachtingen in tweetallen vergelijken; 3-5 minuten doel, voorkennis en route klassikaal bespreken.
+Controle: Welke vraag staat centraal? Verwacht: voorspellen welke meetuitkomsten bij een gegeven voorbereiding en reeks bewerkingen horen, en de voorspelling kunnen uitleggen.
+Beeld: klassiek
+
+Fase: 5-11 | Van klassieke bits naar een nieuwe beschrijving
+Opdrachten: 4, 5, 6
+Toelichting: Een bit heeft twee mogelijke waarden, 0 en 1. Die waarden kunnen bijvoorbeeld uit en aan voorstellen; de gekozen betekenis is een afspraak. Met twee bits krijg je 00, 01, 10 en 11. Met ieder extra bit verdubbel je het aantal mogelijke rijtjes. Werk voor drie bits systematisch: eerst alle rijtjes die met 0 beginnen, daarna die met 1 beginnen. Het resultaat is 000, 001, 010, 011, 100, 101, 110 en 111: acht mogelijkheden. Vijf bits leveren 2^5 = 32 mogelijkheden. Een klassiek register bevat op een moment een bepaald rijtje.
+Toelichting: Maak onderscheid tussen een waarde en onze kennis daarvan. Een omgekeerd kaartje kan een 0 bevatten terwijl jij dat nog niet weet. Je kunt aan je onzekerheid kansen toekennen, maar daarmee heb je nog geen superpositie gemaakt. Bij een qubit gebruiken we amplitudes om een toestand te beschrijven. Die beschrijving maakt andere bewerkingen en voorspellingen mogelijk. We onderzoeken straks het verschil door twee bewerkingen achter elkaar te zetten. Vraag leerlingen daarom hun kaartjesvergelijking als voorlopige gedachte te bewaren, zonder er al alle quantumverschijnselen mee te willen verklaren.
+Werkvorm: 5-7 minuten uitleg en gezamenlijk twee bits uitwerken; 7-9 minuten opdrachten 4 en 5 zelfstandig; 9-10 minuten kaartjesvoorbeeld in tweetallen; 10-11 minuten antwoorden en overgang bespreken.
+Controle: Hoeveel waarden levert een meting van vijf bits tegelijk op? Verwacht: een rijtje van vijf bits, gekozen uit 32 mogelijke rijtjes.
+Beeld: klassiek
+
+Fase: 11-18 | Amplitudes, superpositie en meetkansen
+Opdrachten: 7, 8, 9
+Toelichting: Schrijf |psi> = a|0> + b|1>. De tekens |0> en |1> zijn namen van basistoestanden; lees ze als ket nul en ket een. De getallen a en b heten amplitudes. Voor onze rekenvoorbeelden zijn ze reëel, zodat P(0) = a^2 en P(1) = b^2. De algemene regel gebruikt de gekwadrateerde absolute waarde van mogelijk complexe amplitudes. Omdat de meetkansen samen 1 moeten zijn, geldt hier a^2 + b^2 = 1. Een superpositie is een combinatie van basistoestanden met amplitudes. Een meting in deze basis geeft een afzonderlijke 0 of 1.
+Toelichting: Werk opdracht 7 langzaam uit: (3/5)^2 = 9/25 = 0,36 en (4/5)^2 = 16/25 = 0,64. Controleer daarna 9/25 + 16/25 = 1. Bij opdracht 8 krijg je 1/4 + 1/4 = 1/2; die voorgestelde toestand is dus niet genormaliseerd. Voor gelijke positieve amplitudes gebruik je 1/sqrt(2), niet 1/2. Een minteken verdwijnt bij het kwadrateren: opdracht 9 geeft opnieuw 36% en 64%. Noteer de vraag waarom we het minteken dan toch bewaren. Die vraag verbindt dit rekenwerk straks met interferentie.
+Werkvorm: 11-14 minuten uitleg met het uitgewerkte breukenvoorbeeld; 14-16 minuten individueel de controles en tekenwisseling berekenen; 16-17 minuten berekeningen vergelijken; 17-18 minuten misconcepties over amplitude en kans bespreken.
+Controle: Is een amplitude van -4/5 een negatieve kans? Verwacht: nee, de meetkans is (-4/5)^2 = 16/25; het teken blijft relevant voor latere bewerkingen.
+Beeld: bloch | 106.2602047083 | 0
+
+Fase: 18-24 | De Blochbol als ruimtelijke toestandskaart
+Opdrachten: 10, 11, 12
+Toelichting: De Blochbol beeldt een zuivere toestand van een enkele qubit af als een pijl van het middelpunt naar het boloppervlak. Bovenaan staat |0>, onderaan |1>. De plustoestand |+> = (|0> + |1>)/sqrt(2) ligt op de positieve x-as van de evenaar. De bol is een wiskundige kaart van toestanden, geen afbeelding van een deeltje dat letterlijk rond een bol draait. Het perspectief veranderen helpt om assen te zien; het verandert geen meetkans. Laat een leerling voorspellen waar de drie labels staan voordat je de tekening bespreekt.
+Toelichting: We geven posities aan met theta, gemeten vanaf de bovenkant, en phi, de hoek rond de verticale as. De invoer gebruikt graden. Voor een meting in de 0/1-basis geldt P(0) = cos(theta/2)^2 en P(1) = sin(theta/2)^2. Bij theta = 60 graden is de halve hoek 30 graden: P(0) = 3/4 en P(1) = 1/4. Theta = 90 graden geeft gelijke kansen. Phi verandert deze twee kansen niet, maar bewaart informatie over de relatieve fase. Die kan na een volgende poort wel meetbaar verschil maken. Een afzonderlijke qubit van een verstrengeld paar krijgt hier geen eigen zuivere pijl op het oppervlak.
+Werkvorm: 18-20 minuten de bol en camerahoek bespreken; 20-22 minuten tekenen en theta = 60 graden uitrekenen; 22-23 minuten antwoorden vergelijken; 23-24 minuten grenzen van het beeld controleren.
+Controle: Veranderen P(0) en P(1) wanneer alleen phi verandert? Verwacht: niet bij rechtstreeks meten in de 0/1-basis; een volgende bewerking kan het faseverschil zichtbaar maken.
+Beeld: bloch | 60 | 0
+
+Fase: 24-31 | Quantumpoorten en een circuit lezen
+Opdrachten: 13, 14, 15
+Toelichting: Een quantumpoort is een voorgeschreven bewerking op de toestand. Lees onze circuits van links naar rechts. X wisselt |0> en |1> om. Dus |0> gaat via X naar |1> en via nogmaals X terug naar |0>. H heet de Hadamardpoort. Voor reële amplitudes is de rekenregel H(a,b) = ((a+b)/sqrt(2), (a-b)/sqrt(2)). Zet a = 1 en b = 0 in: beide nieuwe amplitudes worden 1/sqrt(2). H maakt vanuit |0> dus de plustoestand. Dat is een bepaalde, herhaalbare toestand; de willekeur verschijnt bij een geschikte meting.
+Toelichting: Pas opnieuw H toe. De amplitude bij 0 wordt (1/sqrt(2) + 1/sqrt(2))/sqrt(2) = 1. De amplitude bij 1 wordt (1/sqrt(2) - 1/sqrt(2))/sqrt(2) = 0. Het circuit |0> -> H -> H -> meten geeft in het ideale model zeker 0. Laat de klas de twee regels afzonderlijk uitwerken: een plusteken in de bovenste regel, een minteken in de onderste. Meet in dit voorbeeld niet tussen de twee H-poorten. Een tussentijdse meting zou de toestand veranderen en daarmee een andere proef opleveren. De getoonde plustoestand hoort bij het punt na de eerste H.
+Werkvorm: 24-27 minuten X en de eerste H voordoen; 27-29 minuten de tweede H zelfstandig uitrekenen; 29-30 minuten het circuit tekenen; 30-31 minuten de eindmeting gezamenlijk verklaren.
+Controle: Waarom bewijst H gevolgd door H dat H geen gewone muntworp is? Verwacht: zonder tussenmeting keert |0> zeker terug; twee onafhankelijke muntworpen hebben dat gedrag niet.
+Beeld: bloch | 90 | 0
+
+Fase: 31-38 | Interferentie zichtbaar maken
+Opdrachten: 16, 17, 18
+Toelichting: Interferentie betekent hier dat amplitudes voor dezelfde uitkomst elkaar kunnen versterken of opheffen. Introduceer Z met de regel Z(a,b) = (a,-b). Na H vanuit |0> hebben we (1/sqrt(2), 1/sqrt(2)). Na Z staat er (1/sqrt(2), -1/sqrt(2)): de mintoestand |->. Op de Blochbol ligt deze tegenover |+> op de evenaar, bij phi = 180 graden. Rechtstreeks meten zou voor beide uitkomsten kans 1/2 geven. Het verschil zit in de relatieve fase, hier zichtbaar als een minteken tussen de amplitudes.
+Toelichting: Voeg de laatste H toe. De amplitude bij 0 wordt (1/sqrt(2) - 1/sqrt(2))/sqrt(2) = 0. De amplitude bij 1 wordt (1/sqrt(2) - (-1/sqrt(2)))/sqrt(2) = 1. Dus H, Z, H vanuit |0> eindigt in |1>. Omcirkel het dubbele minteken: daar ontstaan vaak rekenfouten. Vergelijk dit met H, H: dezelfde beginvoorbereiding, maar een andere fasebewerking geeft een andere zekere einduitkomst. Dit is onze concrete verklaring van interferentie. Laat leerlingen eerst aanwijzen welke amplitudes worden opgeteld en daarna de kansen berekenen. Wie te vroeg kwadrateert, verliest het teken dat het verschil verklaart.
+Werkvorm: 31-34 minuten fase en Z uitleggen; 34-36 minuten H, Z, H uitwerken; 36-37 minuten vergelijken met H, H; 37-38 minuten de muntworpuitspraak herschrijven en bespreken.
+Controle: Welke ideale einduitkomst verwacht je na H, Z, H vanuit |0>? Verwacht: 1 met kans 100%; de bijdragen aan 0 heffen elkaar op en die aan 1 versterken elkaar.
+Beeld: bloch | 90 | 180
+
+Fase: 38-45 | Twee qubits en verstrengeling
+Opdrachten: 19, 20, 21
+Toelichting: Noem de qubits A en B en schrijf in deze les steeds A eerst. De basisrijtjes zijn 00, 01, 10 en 11. Begin met |00>. H op A geeft (|00> + |10>)/sqrt(2). Daarna volgt CNOT: B wordt omgedraaid als A in de betreffende basisterm 1 is. De term |00> blijft |00>; de term |10> wordt |11>. Daardoor ontstaat (|00> + |11>)/sqrt(2), een Belltoestand. Ideaal geeft meten in de 0/1-basis 00 of 11, elk met kans 1/2. De afzonderlijke bits zijn willekeurig, maar binnen hetzelfde meetpaar zijn ze gelijk.
+Toelichting: De gezamenlijke Belltoestand kun je niet schrijven als een product van twee afzonderlijke zuivere qubittoestanden: dat noemen we verstrengeling. Daarom vervangen we de enkele Blochpijl door een beeld van gezamenlijke uitkomsten. Alleen twee gelijke klassieke kaartjes uitdelen bewijst geen verstrengeling; voor zo'n onderscheid zijn ook andere meetinstellingen nodig. A kan de eigen uitkomst niet kiezen en daarmee geen gewenste boodschap aan B sturen. Hun afzonderlijke uitkomsten blijven willekeurig. Pas door de lijsten later via een gewoon communicatiekanaal te vergelijken, zien ze de overeenkomst. Laat tweetallen het verschil verwoorden tussen weten dat uitkomsten overeenkomen en bepalen welke uitkomst de ander ontvangt.
+Werkvorm: 38-41 minuten het circuit en beide termen op het bord volgen; 41-43 minuten leerlingen de toestand laten afleiden; 43-44 minuten kaartjes en berichten bespreken; 44-45 minuten begrip controleren.
+Controle: Kunnen we het Bellpaar afbeelden als twee zuivere Blochpijlen? Verwacht: nee; de afzonderlijke toestanden zijn gemengd en de gezamenlijke correlaties vereisen een beschrijving van het paar.
+Beeld: bell
+
+Fase: 45-51 | Meten, herhalen en fouten onderzoeken
+Opdrachten: 22, 23, 24
+Toelichting: Een meetronde, vaak een shot genoemd, bestaat hier uit opnieuw voorbereiden, het circuit uitvoeren en meten. Herhaald uitlezen zonder opnieuw voorbereiden is een andere proef. Vergelijk verwachte kansen met aantallen waarnemingen. Als twee uitkomsten elk kans 1/2 hebben, hoeven honderd rondes niet precies vijftig van elk te geven. De reeks 00: 47, 01: 3, 10: 2, 11: 48 is speciaal voor deze les verzonnen; het is geen hardwaremeting. Het aandeel gelijke uitkomsten is (47 + 48)/100 = 95%.
+Toelichting: Bij het ideale Bellcircuit zijn 01 en 10 onmogelijk in deze meetbasis. Hun aanwezigheid past dus niet bij uitsluitend toevalsvariatie van dat ideale model. Een echte proef kan last hebben van fouten bij voorbereiden, poorten of uitlezen. Het verschil tussen 47 en 48 bewijst op zichzelf geen storing: aantallen wisselen ook bij juiste kansen. Laat leerlingen als controle eerst |00> voorbereiden zonder het Bellcircuit en de uitkomsten tellen. Zo onderzoek je een deel van de fouten, maar je isoleert niet automatisch elke oorzaak. Meer meetrondes verkleinen doorgaans de statistische onzekerheid; ze repareren geen systematische fout. Laat iedere groep een conclusie en een grens aan die conclusie formuleren.
+Werkvorm: 45-47 minuten shots en het verzonnen meetverslag uitleggen; 47-49 minuten percentages en afwijkingen onderzoeken; 49-50 minuten een controleproef ontwerpen; 50-51 minuten conclusies bespreken.
+Controle: Bewijst 95% gelijke uitkomsten dat een apparaat correct werkt en verstrengeling heeft gemaakt? Verwacht: nee; dit is een beperkte controle in een meetbasis, waarvoor aanvullende proeven en foutanalyse nodig zijn.
+Beeld: bell
+
+Fase: 51-57 | Toepassingen zonder wonderverhalen
+Opdrachten: 25, 26, 27
+Toelichting: Een quantumalgoritme moet bewerkingen zo kiezen dat bruikbare uitkomsten voldoende waarschijnlijk worden. Superpositie alleen levert geen lijst met alle oplossingen. Een voorbeeld is Grovers zoekalgoritme voor een ongestructureerd zoekprobleem. Onder de gebruikelijke voorwaarden daalt het benodigde aantal aanroepen van een geschikte controlefunctie van orde N naar orde sqrt(N). Die controlefunctie heet een orakel. Voor N = 256 is sqrt(N) = 16; voor N = 1024 is dat 32. Deze waarden illustreren de schaalverandering. Ze zijn geen exacte looptijden en houden geen rekening met het bouwen van het orakel, invoeren van gegevens of corrigeren van fouten.
+Toelichting: Bespreek de keuze tussen een schoolverslag opmaken en het gedrag van een molecuul onderzoeken. Voor quantumchemie proberen onderzoekers quantumtoestanden en hun bewerkingen te gebruiken om eigenschappen van moleculen te berekenen. Of dat praktisch voordeel oplevert, hangt af van het probleem, het algoritme, de hardware en de beste klassieke vergelijking. Een gewone tekstverwerker krijgt door zijn taakomschrijving geen quantumvoordeel. Laat leerlingen een onderzoeksclaim verbeteren door te benoemen wat er wordt vergeleken: antwoordkwaliteit, benodigde middelen en omstandigheden. Houd de besproken zoekmachine voor lesdocumenten apart in het gesprek: die voert een klassieke tekstzoekactie uit en past geen Groveralgoritme toe.
+Werkvorm: 51-53 minuten zoekalgoritme en schaalvoorbeeld uitleggen; 53-55 minuten berekenen en beperkingen formuleren; 55-56 minuten een toepassing kiezen; 56-57 minuten twee onderbouwde antwoorden bespreken.
+Controle: Betekent sqrt(1024) = 32 dat iedere zoekopdracht 32 keer sneller wordt? Verwacht: nee; dit is een schaalvergelijking voor orakelaanroepen onder voorwaarden, geen garantie voor totale rekentijd.
+Beeld: samenvatting
+
+Fase: 57-60 | Afronden en begrip aantonen
+Opdrachten: 28, 29, 30
+Toelichting: Laat leerlingen zonder aantekeningen drie korte antwoorden schrijven. Een amplitude beschrijft een bijdrage aan een toestand; de gekwadrateerde absolute waarde geeft de bijbehorende meetkans. Superpositie betreft een combinatie van basistoestanden. Verstrengeling betreft een gezamenlijke toestand die niet als onafhankelijke deeltoestanden kan worden beschreven. Voor ons zuivere Bellvoorbeeld hebben we dit met twee qubits gezien. Laat leerlingen het verschil dus niet uitsluitend omschrijven als een kwestie van het aantal mogelijke meetuitkomsten.
+Toelichting: Keer terug naar de openingszin en de uitspraak over alle antwoorden tegelijk. Vraag welke berekening een verbeterde uitleg ondersteunt. H, H en H, Z, H zijn geschikte voorbeelden: de fase bepaalt hoe amplitudes bij een volgende bewerking optellen. Sluit af met een concrete terugblik: je kunt nu een klein circuit volgen en een voorspelling controleren. Verzamel de antwoorden. Wie amplitude en kans verwart, krijgt het breukenvoorbeeld als herhaling; wie daarmee klaar is, verklaart waarom een tussenmeting het H, H-experiment verandert.
+Werkvorm: 57-58 minuten drie afsluitende antwoorden schrijven; 58-59 minuten met een buur vergelijken; 59-60 minuten de openingsvraag klassikaal beantwoorden en antwoorden inleveren.
+Controle: Noem een mogelijkheid en een beperking. Verwacht bijvoorbeeld: geschikte quantumalgoritmen kunnen bepaalde zoek- of simulatieproblemen anders aanpakken; meten levert afzonderlijke uitkomsten en praktisch voordeel vereist een passende vergelijking.
+Beeld: samenvatting
+Einde.

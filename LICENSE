@@ -1,0 +1,130 @@
+OPHANGEN RESEARCH-ONLY SOURCE-AVAILABLE LICENSE 1.0
+
+SPDX-License-Identifier: LicenseRef-Ophangen-Research-Only-1.0
+
+Copyright (c) 2026 Karim Abdulahi
+Author and licensor: Karim Abdulahi
+Homepage: https://1e100.nl/
+Email: karim.abdulahi@outlook.com
+
+All rights reserved except for the limited permissions expressly granted below.
+This is a custom source-available license, not an open-source license.
+
+1. Scope
+
+"Material" means the original Ophangen source code, scripts, templates,
+documentation, dictionary, examples and other original content in the ophangen
+project directory for which Karim Abdulahi owns or controls the relevant rights.
+It includes copies of that content embedded in generated presentations or logs.
+
+The separately governed manuscript onderzoek.pdf is excluded from "Material".
+Its original protected research content is subject to ONDERZOEK_LICENSE.txt.
+The permissions in sections 2 and 5 do not grant any additional rights in
+that manuscript. Any additional agreement concerning disclosed research
+information requires separate express acceptance; repository access alone
+does not establish such an agreement.
+
+Third-party software, publications, quotations and other third-party content are
+excluded. Their respective licenses and copyright notices continue to apply,
+including the MIT license for latex2mathml. See THIRD_PARTY_NOTICES.md.
+This license does not claim ownership of your inputs, scientific facts or
+independently created research results. It does not govern other projects in
+the containing repository.
+
+2. Limited permission
+
+Subject to every condition of this license, the licensor grants you a free,
+non-exclusive, non-transferable and non-sublicensable permission to read and
+inspect the Material in the repository published by the author, and to obtain
+the private local copies strictly necessary to install and execute it solely
+for non-commercial scientific research in a computing environment under your
+control. Copies may be obtained by downloading or cloning that repository.
+
+"Non-commercial scientific research" means systematic investigation to advance
+scientific knowledge, without a commercial, revenue-generating, business,
+product-development or operational-service purpose. Academic or non-profit
+status alone does not make a use permitted.
+
+Mechanical installation, compilation and runtime copies strictly necessary for
+that permitted execution are allowed. Selecting supported settings and supplying
+your own research inputs through the documented interfaces are allowed. These
+permissions do not authorize editing the source code or other original Material.
+
+You may generate, save and view private presentations, logs and other outputs
+through the documented interfaces solely for the permitted research. Any
+Material included in those outputs remains subject to this license; section 5
+governs publication.
+
+3. Restrictions
+
+Unless the licensor gives separate prior written permission, you may not:
+
+(a) use the Material for any purpose beyond section 2, including commercial
+    research, consulting, production, business operations or paid services;
+(b) modify, adapt, translate or create derivative works of the Material, except
+    as expressly allowed in section 2;
+(c) incorporate or reuse the Material or any portion of it in another project,
+    product, service, publication or distributed dataset;
+(d) distribute, publish, upload, mirror, share, sell, rent, sublicense or
+    otherwise provide copies of the Material to others, including public forks
+    and modified or compiled copies;
+(e) expose the software as a public or third-party hosted service, or make its
+    functionality available to others as a service; or
+(f) remove or obscure attribution, copyright notices or license terms.
+
+Merely making the repository publicly readable does not grant any additional
+permission under this license. Section 8 preserves independently applicable
+rights and exceptions.
+
+4. Attribution
+
+Retain this license and all applicable attribution and third-party notices with
+every permitted copy. When publishing findings obtained through permitted use,
+identify Ophangen, credit Karim Abdulahi, link to https://1e100.nl/ and identify
+the studied version or commit when available. Attribution does not authorize an
+otherwise prohibited use or imply the author's endorsement.
+
+5. Research findings
+
+You may publish your own independently written scientific findings and
+numerical results from permitted research, subject to section 4. This permission
+does not authorize redistribution of the Material, including its source,
+transcripts, templates, images or complete generated HTML presentations or logs.
+It does not restrict scientific facts, ideas or results that copyright does not
+protect, nor rights in material that you independently own.
+
+6. Reserved rights and other permissions
+
+All rights not expressly granted are reserved. No patent or trademark license
+is granted. Permission for modification, redistribution, commercial use or any
+other use outside section 2 must be obtained in writing from Karim Abdulahi at
+karim.abdulahi@outlook.com. A research purpose by itself does not waive any of
+the restrictions above.
+
+7. Termination
+
+The permissions granted by this license terminate automatically if you breach
+its conditions. Upon termination, cease the activities relying on this license
+and remove copies held under it, except where retention or use is independently
+required or permitted by applicable law. Reinstatement requires the licensor's
+written permission.
+
+8. Existing rights, third-party terms and applicable law
+
+This license does not revoke permissions already validly granted for earlier
+versions or separately licensed material. It does not override third-party
+licenses, mandatory law, statutory exceptions or rights you independently
+possess. It also does not restrict rights expressly granted to a repository
+hosting provider or its users under applicable hosting terms, to the extent
+those rights apply. Such rights do not expand this license's own permission
+to execute, modify or reuse the Material.
+
+9. No warranty; limitation of liability
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE MATERIAL IS PROVIDED
+"AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY AND
+NONINFRINGEMENT. THE AUTHOR AND LICENSOR SHALL NOT BE LIABLE FOR ANY CLAIM,
+DAMAGES OR OTHER LIABILITY ARISING FROM THE MATERIAL OR ITS USE, WHETHER IN
+CONTRACT, TORT OR OTHERWISE. NOTHING IN THIS LICENSE EXCLUDES LIABILITY THAT
+CANNOT LAWFULLY BE EXCLUDED.

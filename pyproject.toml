@@ -1,0 +1,20 @@
+[project]
+name = "ophangen"
+version = "1.0.0"
+description = "Formele Nederlandse instructietaal en documentzoekmachine"
+requires-python = ">=3.11"
+authors = [
+    { name = "Karim Abdulahi", email = "karim.abdulahi@outlook.com" },
+]
+# License for original Ophangen material; see THIRD_PARTY_NOTICES.md.
+license = "LicenseRef-Ophangen-Research-Only-1.0"
+license-files = ["LICENSE", "ONDERZOEK_LICENSE.txt", "THIRD_PARTY_NOTICES.md", "vendor/*.LICENSE"]
+dependencies = [
+    "latex2mathml",
+]
+
+[project.urls]
+Homepage = "https://1e100.nl/"
+
+[tool.uv.sources]
+latex2mathml = { path = "vendor/latex2mathml-3.81.1-py3-none-any.whl" }

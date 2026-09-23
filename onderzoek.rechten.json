@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "document": "onderzoek.pdf",
+  "title": "Een bewijsdragende temporele kennisgraaf",
+  "author_declared": "Karim Abdulahi",
+  "rights_holder_declared": "Karim Abdulahi",
+  "homepage": "https://1e100.nl/",
+  "email": "karim.abdulahi@outlook.com",
+  "notice": "ONDERZOEK_LICENSE.txt",
+  "notice_version": "1.1",
+  "manuscript_status": "Voorpublicatie 1.1; geen vastgelegde opleidingstoekenning of beoordeling",
+  "intended_programme": "Radboud Universiteit Nijmegen, BSc Computing Science",
+  "programme_approval": "Niet vastgelegd; voorafgaande afstemming vereist",
+  "publication_date_verified": null,
+  "previous_annotation": {
+    "notice_version": "1.0",
+    "sha256": "56bd56796508d6b7937b73f4a8be83920ebd8424ac46cbe3a7835eda35b811f0",
+    "bytes": 778803,
+    "pages": 164
+  },
+  "notice_sha256": "95246f201bc5676ed3c8bdade466f6a03a555e5afb5873b480913474abbe52b9",
+  "agreement_template": "ONDERZOEK_INZAGEOVEREENKOMST.txt",
+  "recorded_at_utc": "2026-09-23T18:11:57.868201+00:00",
+  "original": {
+    "sha256": "ae1a0bc4c8bfc4806898481fa4ae1850fd18709d111ff350d0604f08dcaa0d57",
+    "bytes": 688665,
+    "pages": 163
+  },
+  "annotated": {
+    "sha256": "2a2ab95fc7d8578f1e696ecef631d01273f53216883ed41c2ab0cb9c206d0678",
+    "bytes": 781554,
+    "pages": 164
+  },
+  "changes": [
+    "Auteursvoorblad met status voorpublicatie en behoud van scriptierechten toegevoegd",
+    "Auteurs- en rechtenmetadata toegevoegd",
+    "ONDERZOEK_LICENSE.txt versie 1.1 als PDF-bijlage toegevoegd"
+  ],
+  "verification": {
+    "original_page_content_streams_unchanged": true,
+    "original_extracted_text_unchanged": true,
+    "named_destinations_preserved": 1447
+  },
+  "evidence_scope": "Lokale versie-identificatie en auteursverklaring; geen onafhankelijke tijdstempel, handtekening of verificatie van auteurschap.",
+  "statutory_and_third_party_rights_preserved": true,
+  "facts_as_such_claimed_as_exclusive_property": false,
+  "agreement_executed": false
+}

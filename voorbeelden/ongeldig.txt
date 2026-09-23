@@ -1,0 +1,9 @@
+Titel: Voorbeeld met fouten
+Vak: Wiskunde B
+Niveau: 4 vwo
+Onderwerp: Foutmeldingen
+Leerdoel: Je kunt een formeel document verbeteren.
+Duur: 0 minuten
+Instructies:
+2. doe iets met [9]
+Einde.

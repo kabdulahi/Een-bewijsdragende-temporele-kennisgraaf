@@ -1,0 +1,16 @@
+Titel: De raaklijn aan een parabool
+Vak: Wiskunde B
+Niveau: 4 vwo
+Onderwerp: Afgeleide en raaklijn
+Leerdoel: Je kunt met de afgeleide de vergelijking van een raaklijn bepalen.
+Duur: 50 minuten
+
+Instructies:
+1. Teken een schets van de grafiek van f(x) = x^2 - 4x + 3 en geef de snijpunten met de assen aan.
+2. Differentieer de functie uit [1] en noteer f'(x).
+3. Bereken met [2] de helling van de grafiek bij x = 3.
+4. Bepaal de vergelijking van de raaklijn bij x = 3 met de helling uit [3] en het punt (3, f(3)).
+5. Controleer of de vergelijking uit [4] door het raakpunt gaat.
+6. Los de vergelijking f'(x) = 0 op en bepaal de coordinaten van de top van de parabool.
+7. Verklaar met het teken van de afgeleide waar de functie daalt en waar zij stijgt.
+Einde.

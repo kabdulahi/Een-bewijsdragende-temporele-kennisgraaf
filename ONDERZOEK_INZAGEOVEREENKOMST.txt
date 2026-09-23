@@ -1,0 +1,255 @@
+MODEL — NIET ONDERTEKEND
+OVEREENKOMST VOOR WETENSCHAPPELIJKE INZAGE
+
+Dit bestand is een invulmodel. Het is geen reeds gesloten overeenkomst. Laat het
+vóór gebruik juridisch beoordelen en vul alle verplichte gegevens in. Het model
+bewijst geen auteurschap of eigendom. Publicatie in een repository, downloaden,
+openen, lezen of stilzwijgen geldt op zichzelf niet als aanvaarding. De
+onderstaande contractuele verplichtingen ontstaan uitsluitend na voorafgaande,
+uitdrukkelijke schriftelijke instemming van beide partijen met de ingevulde
+tekst.
+
+1. Partijen
+
+Verstrekker: Karim Abdulahi.
+Homepage: https://1e100.nl/
+E-mail voor toestemming: karim.abdulahi@outlook.com.
+Adres verstrekker: [invullen].
+
+Ontvanger, volledige naam of statutaire naam: [invullen].
+Instelling of organisatie, indien van toepassing: [invullen].
+Adres ontvanger: [invullen].
+Naam vertegenwoordiger, indien van toepassing: [invullen].
+Functie en bevoegdheid vertegenwoordiger: [invullen].
+E-mailadres ontvanger: [invullen].
+
+De ondertekenaar geeft aan of deze persoonlijk partij is of bevoegd namens de
+genoemde rechtspersoon handelt. Een instelling is niet uitsluitend door
+vermelding van haar naam gebonden. Andere personen krijgen geen toegang op grond
+van deze overeenkomst.
+
+2. Document, informatie en doel
+
+Het onderzoeksdocument is onderzoek.pdf, getiteld “Een bewijsdragende temporele
+kennisgraaf”, gedateerd september 2026. Deze overeenkomst geldt uitsluitend voor
+de hieronder geïdentificeerde versie en de uitdrukkelijk opgenomen aanvullende
+informatie.
+
+Versiedatum of versiekenmerk van onderzoek.pdf: [invullen].
+SHA-256 van het verstrekte PDF-bestand: [64 hexadecimale tekens invullen].
+Referentie voor de controle: onderzoek.rechten.json bij deze PDF-versie.
+Aanvullend verstrekte stukken en hun versie of hash: [invullen of “geen”].
+
+Partijen controleren vóór instemming dat de ingevulde hash overeenkomt met het
+daadwerkelijk verstrekte bestand. Een hash identificeert een bestandsversie;
+deze bewijst niet wie de auteur is of wanneer een werk is ontstaan.
+
+Concreet, niet-commercieel wetenschappelijk inzage- en beoordelingsdoel:
+[invullen].
+Toegestane beoordelingshandelingen en eventuele private notities: [invullen].
+Personen die namens ontvanger inzage mogen hebben: [invullen].
+Plaats of beveiligde omgeving van inzage: [invullen].
+Toegestane noodzakelijke private lokale kopieën: [invullen of “geen”].
+
+Het doel is uitsluitend persoonlijke wetenschappelijke inzage en de
+uitdrukkelijk overeengekomen beoordeling. Het omvat geen toepassing,
+implementatie, vervolgonderzoek met hergebruik van beschermde inhoud of
+bedrijfsvoering. Een aanvullend gebruik wordt vooraf afzonderlijk aangevraagd.
+Voor feiten en ideeën die niet door een uitsluitend recht worden beschermd,
+geldt de afbakening in artikel 5.
+
+3. Ingang en duur
+
+Datum instemming verstrekker: [invullen].
+Datum instemming ontvanger: [invullen].
+Aanvang inzageperiode: [invullen].
+Einde inzageperiode: [invullen].
+
+Wanneer artikel 5 van toepassing is:
+Einddatum verplichting voor afzonderlijk aangeduide niet-openbare informatie:
+[invullen; anders “niet van toepassing”].
+Motivering van deze beperkte, redelijke beschermingsduur: [invullen; anders
+“niet van toepassing”].
+
+De overeenkomst gaat in op de overeengekomen aanvangsdatum, maar nooit vóór de
+schriftelijke instemming van beide partijen. Identiteit, versie, doel,
+toegestane personen en toepasselijke einddata moeten daarbij zijn ingevuld. De
+toestemming eindigt op de einddatum van de inzageperiode. Niet-openbare
+informatie wordt alleen tot de afzonderlijk overeengekomen einddatum beschermd
+en alleen zolang geen uitzondering van artikel 5 geldt. Partijen verlengen een
+termijn uitsluitend vooraf schriftelijk.
+
+De overeenkomst heeft geen terugwerkende kracht. Eerder rechtsgeldig verkregen
+rechten, toestemmingen en wettelijk toegestane handelingen blijven behouden. Na
+afloop blijven bestaande intellectuele-eigendomsrechten gelden zonder dat
+hierdoor een nieuwe contractuele geheimhoudingstermijn ontstaat.
+
+4. Beschermde inhoud en beperkte toestemming
+
+Karim Abdulahi wordt als auteur van het onderzoeksdocument vermeld. Voor zover
+hij de betreffende rechten bezit of geldig beheert, blijven de auteursrechten op
+de oorspronkelijke tekst, figuren en overige beschermde uitwerking bij hem. Er
+vindt geen overdracht van rechten plaats. Deze vermelding vestigt geen eigendom
+van feiten, ideeën, wiskundige waarheden, natuurwetten of onderzoek als abstract
+onderwerp.
+
+Verstrekker verleent ontvanger gedurende de inzageperiode een persoonlijke,
+niet-overdraagbare toestemming voor de in artikel 2 vastgelegde handelingen.
+Uitsluitend de daar toegestane private kopieën en technische handelingen die
+noodzakelijk zijn voor de afgesproken inzage vallen onder deze toestemming.
+Toegestane kopieën behouden de auteur, rechtenvermeldingen en toepasselijke
+voorwaarden. Ontvanger beperkt toegang tot de genoemde personen.
+
+Zonder voorafgaande schriftelijke toestemming van verstrekker mag ontvanger
+beschermde inhoud niet buiten deze inzage hergebruiken, bewerken, vertalen,
+opnemen in andere werken of datasets, verspreiden, publiceren, aan derden
+verstrekken of uploaden naar een dienst van derden. Ook invoer in een AI-dienst,
+modeltraining of automatische verwerking voor een ander doel valt niet onder de
+verleende toestemming. De toestemming omvat geen uitvoering van software uit het
+onderzoek of implementatie van daarin beschreven technieken.
+
+Deze beperkingen gelden alleen voor zover de handelingen afhankelijk zijn van
+rechten die verstrekker kan uitoefenen of onder de geldige, uitdrukkelijk
+overeengekomen verplichtingen in artikel 5 vallen. Het ontbreken van een
+licentie voor een techniek maakt onbeschermde openbare kennis niet alsnog
+exclusief. Wettelijke uitzonderingen en zelfstandig bestaande rechten worden
+niet door dit artikel opgeheven.
+
+5. Specifieke niet-openbare onderzoeksinformatie
+
+Partijen kunnen uitsluitend de volgende, concreet aangeduide, nog niet
+rechtmatig openbare informatie onder de aanvullende gebruiksbeperking en
+geheimhouding brengen:
+
+Beschrijving en afbakening van niet-openbare informatie: [invullen of “geen”].
+Wijze en datum van verstrekking: [invullen of “niet van toepassing”].
+Eventuele afzonderlijke vertrouwelijke bijlage en versie: [invullen of “geen”].
+
+Een algemene verwijzing naar alle feiten of alle inhoud van onderzoek.pdf is
+hiervoor onvoldoende. Een openbaar beschikbaar document of al openbare
+informatie wordt door deze overeenkomst niet achteraf vertrouwelijk. Als geen
+informatie is ingevuld, gelden de aanvullende verplichtingen van dit artikel
+niet.
+
+Voor de aldus overeengekomen niet-openbare informatie gebruikt ontvanger de
+ontvangen bevindingen en kennis uitsluitend voor het doel in artikel 2. Zonder
+voorafgaande schriftelijke toestemming past ontvanger deze informatie niet toe,
+implementeert deze niet, gebruikt deze niet in eigen of andermans onderzoek of
+producten en verstrekt deze niet aan derden. Deze contractuele afspraak
+veronderstelt geen auteursrecht op feiten en bindt uitsluitend de partijen die
+haar uitdrukkelijk hebben aanvaard.
+
+De aanvullende beperkingen gelden niet voor informatie waarvan ontvanger kan
+onderbouwen dat deze zonder schending van een verplichting rechtmatig openbaar
+is, al vóór ontvangst rechtmatig bij ontvanger bekend was, onafhankelijk van de
+ontvangen informatie is ontwikkeld of rechtmatig zonder gebruiks- of
+geheimhoudingsbeperking van een derde is verkregen. Normale
+onderzoeksdocumentatie kan deze omstandigheden aantonen. Verstrekker kan op
+grond van dit artikel geen rechten opeisen op onafhankelijk ontwikkelde
+resultaten.
+
+Ontvanger bewaart daadwerkelijk niet-openbare informatie met redelijke zorg,
+passend bij haar aard en de overeengekomen inzageomgeving. Een vermoedelijke
+ongeoorloofde toegang meldt ontvanger onverwijld aan verstrekker en partijen
+beperken redelijkerwijs verdere verspreiding.
+
+6. Schriftelijke toestemming voor aanvullend gebruik
+
+Ontvanger vraagt aanvullende toestemming via karim.abdulahi@outlook.com. De
+aanvraag vermeldt de identiteit van de gebruiker, de PDF-versie en eventuele
+bijlagen, de betreffende passages of informatie, het beoogde gebruik, de
+doelgroep, de duur, de verspreidingswijze en een eventueel commercieel belang.
+Toestemming wordt pas verleend door een uitdrukkelijke schriftelijke reactie van
+Karim Abdulahi of zijn aantoonbaar bevoegde vertegenwoordiger.
+
+Een onbeantwoord verzoek, bronvermelding of mondeling gesprek vormt geen
+aanvullende toestemming. Toestemming geldt uitsluitend voor het concreet
+beschreven gebruik en laat rechten van derden onverlet. Voor een gebruik
+waarvoor op grond van dwingend recht geen toestemming vereist is, bestaat ook op
+grond van deze bepaling geen aanvullende toestemmingsplicht.
+
+7. Wettelijke rechten en rechten van derden
+
+Niets in deze overeenkomst heft dwingend recht, toepasselijke wettelijke
+uitzonderingen of zelfstandig bestaande rechten op. Voor zover een wettelijke
+uitzondering niet contractueel kan worden uitgesloten, blijft die volledig van
+toepassing. Er wordt geen afstand van zulke rechten gevraagd.
+
+Rechten van derden op citaten, figuren, referentiemateriaal, software en andere
+onderdelen blijven bij hun rechthebbenden. Verstrekker verleent geen rechten die
+hij niet bezit of mag verlenen. Naamsvermelding van Karim Abdulahi houdt geen
+aanspraak op auteurschap van materiaal van derden in.
+
+Indien een wet, bevoegde autoriteit of bindende rechterlijke beslissing
+openbaarmaking vereist, mag ontvanger de noodzakelijke informatie verstrekken.
+Voor zover toegestaan stelt ontvanger verstrekker vooraf in kennis, beperkt
+ontvanger de verstrekking tot wat verplicht is en werkt ontvanger redelijkerwijs
+mee aan beschikbare beschermingsmaatregelen. Deze bepaling belemmert geen
+wettelijke meldingen of andere dwingendrechtelijke beschermingen.
+
+8. Einde, beëindiging en bewaring
+
+Ontvanger kan de inzage eerder beëindigen door schriftelijke kennisgeving en het
+gebruik te staken. Verstrekker kan bij een wezenlijke schending beëindigen
+volgens het toepasselijke recht, met een redelijke herstelmogelijkheid wanneer
+herstel mogelijk en vereist is. Bij een onmiddellijk risico op ongeoorloofde
+verspreiding mogen partijen de toegang voorlopig opschorten.
+
+Na einde of beëindiging staakt ontvanger de handelingen die van deze toestemming
+afhangen. Ontvanger verwijdert of retourneert binnen dertig dagen de onder deze
+overeenkomst verkregen kopieën, afgeleide kopieën en niet-openbare notities,
+voor zover bewaring of gebruik niet onafhankelijk wettelijk vereist of
+toegestaan is. Een noodzakelijke bewaarkopie blijft afgeschermd en wordt alleen
+voor de betreffende wettelijke verplichting of gerechtvaardigde bewijsbewaring
+gebruikt. Reguliere back-ups worden volgens de bestaande redelijke bewaartermijn
+verwijderd en niet voor nieuw gebruik teruggezet.
+
+Op verzoek bevestigt ontvanger schriftelijk de uitvoering, met vermelding van
+een wettelijk noodzakelijke uitzondering. Een nog lopende, uitdrukkelijk
+overeengekomen verplichting uit artikel 5 blijft tot de daar vastgelegde
+einddatum gelden. Termijnen worden door beëindiging niet verlengd.
+
+9. Recht, wijzigingen en afzonderlijke beoordeling
+
+Op deze overeenkomst is Nederlands recht van toepassing, met behoud van
+dwingendrechtelijke bescherming die volgens toepasselijk recht niet kan worden
+uitgesloten. Een geschil wordt voorgelegd aan de volgens de toepasselijke regels
+bevoegde rechter. Partijen proberen eerst via de genoemde contactgegevens een
+praktische oplossing te bereiken.
+
+Wijzigingen vereisen uitdrukkelijke schriftelijke instemming van beide partijen.
+Een wijziging van een bestand in de repository wijzigt deze overeenkomst niet
+automatisch. Het ontbreken van geldigheid van een afzonderlijke bepaling schept
+geen ruimere exclusieve rechten op onderzoeksinformatie.
+
+Deze overeenkomst bevestigt geen onafhankelijke juridische vaststelling van
+auteurschap, originaliteit of rechtenbezit en garandeert geen afdwingbaarheid in
+iedere situatie. De ingevulde overeenkomst moet vóór gebruik worden getoetst aan
+de feitelijke rechten, eerdere publicaties en de omstandigheden van de betrokken
+partijen.
+
+10. Uitdrukkelijke schriftelijke instemming
+
+Iedere partij ontvangt de volledige ingevulde overeenkomst, de genoemde bijlagen
+en de geïdentificeerde PDF-versie vóór instemming. Onderstaande ondertekening of
+een uitdrukkelijke schriftelijke aanvaarding van exact dezelfde ingevulde tekst
+legt die instemming vast. Bewaar beide aanvaardingen met de versie waarop zij
+betrekking hebben.
+
+Voor verstrekker:
+Naam: Karim Abdulahi.
+Plaats: [invullen].
+Datum: [invullen].
+Handtekening of identificatie van schriftelijke aanvaarding: [invullen].
+
+Voor ontvanger:
+Naam partij: [invullen].
+Naam ondertekenaar: [invullen].
+Hoedanigheid en vertegenwoordigingsbevoegdheid: [invullen].
+Plaats: [invullen].
+Datum: [invullen].
+Handtekening of identificatie van schriftelijke aanvaarding: [invullen].
+
+Bevestigde bijlagen bij de ingevulde overeenkomst: [invullen of “geen”].
+
+EINDE INVULMODEL — ZONDER AANVAARDING NIET OVEREENGEKOMEN

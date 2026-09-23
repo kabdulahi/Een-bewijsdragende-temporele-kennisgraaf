@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Ophangen · Quantumdynamica</title><style>/*__STIJL__*/</style></head>
+<body>
+<header class="titelbalk"><div><p class="merk">OPHANGEN / DYNAMICA-ATELIER</p><h1 id="titel"></h1></div><button id="alles-open">Open drie vensters</button></header>
+<main id="vensters" class="vensters" aria-label="Drie gekoppelde collegevensters">
+<dialog open id="transcriptvenster" aria-labelledby="transcriptkop">
+  <header><div><span class="nummer">01 / HOORCOLLEGE</span><h2 id="transcriptkop">Transcript en lesstructuur</h2></div><button data-sluit="transcriptvenster" aria-label="Sluit transcriptvenster">×</button></header>
+  <div class="paneelinhoud">
+    <p class="klein" id="tempo-uitleg"></p>
+    <canvas id="structuurbeeld" height="150" aria-label="Driedimensionale lesstructuur met actuele tijdmarkering" role="img"></canvas>
+    <label class="veld">Collegefragment<select id="fragment"></select></label>
+    <p class="sectielabel" id="fragmenttijd"></p><h3 id="fragmenttitel"></h3>
+    <div class="volgregel"><p id="leesstatus" class="badge"></p><label><input id="volgtekst" type="checkbox" checked> Volg tekst</label></div>
+    <div id="transcripttekst" class="transcripttekst"></div>
+  </div>
+</dialog>
+<dialog open id="modelvenster" aria-labelledby="modelkop">
+  <header><div><span class="nummer">02 / MODELTOESTAND</span><h2 id="modelkop">Coherente oscillator</h2></div><button data-sluit="modelvenster" aria-label="Sluit modelvenster">×</button></header>
+  <div class="paneelinhoud">
+    <p class="klein">Exact analytisch model · ℏ = m = ω = 1</p>
+    <div class="tabgroep" role="group" aria-label="Modelweergave"><button id="golf" aria-pressed="true">ψ in 3D</button><button id="dichtheid" aria-pressed="false">Kansdichtheid</button><button id="faseruimte" aria-pressed="false">Faseruimte</button></div>
+    <canvas id="modelbeeld" height="300" role="img" aria-label="Golffunctie, reëel en imaginair deel als 3D-kromme"></canvas>
+    <div class="camera"><button id="camera">Herstel camera</button><span>Sleep de 3D-golf om te draaien</span></div>
+    <p id="modeluitleg" class="klein"></p>
+    <dl id="meetwaarden" class="meetwaarden"></dl>
+    <p class="klein" id="modeltijd-uitleg"></p>
+    <p class="klein">De golfkromme gebruikt x, Re ψ en Im ψ als assen. Dit zijn geen drie ruimtelijke coördinaten. Een Wignercontour hieronder geldt alleen voor deze coherente toestand.</p>
+  </div>
+</dialog>
+<dialog open id="symboolvenster" aria-labelledby="symboolkop">
+  <header><div><span class="nummer">03 / SYMBOLISCHE TOESTAND</span><h2 id="symboolkop">Van symbool naar toestand</h2></div><button data-sluit="symboolvenster" aria-label="Sluit symbolenvenster">×</button></header>
+  <div class="paneelinhoud">
+    <p class="klein">Dezelfde toestand in ketnotatie, coördinaten en operatoren.</p>
+    <label class="veld">Symbool<select id="symbool"></select></label>
+    <p id="symboolbetekenis"></p><pre id="symboolformule" class="formule"></pre><p id="symboolwaarde" class="badge"></p>
+    <h3>Toestandsvector</h3><pre id="ket" class="formule"></pre>
+    <h3>Golffunctie</h3><pre id="psi" class="formule"></pre>
+    <h3>Dynamica en dichtheidsoperator</h3><pre id="operatoren" class="formule"></pre>
+    <h3>Formules bij dit fragment</h3><div id="fragmentformules"></div>
+    <details><summary>Symbooldefinities bij dit fragment</summary><dl id="fragmentbegrippen"></dl></details>
+  </div>
+</dialog>
+</main>
+<footer class="bediening">
+  <div class="tijdregel"><label for="tijd">Collegeklok <output id="klok"></output></label><span id="status" role="status" aria-live="polite">Gepauzeerd</span></div>
+  <input id="tijd" type="range" min="0" step="0.5" value="0" aria-label="Collegetijd in seconden">
+  <div class="knoppen"><div><button id="begin">↺ Begin</button><button id="vorige">← Vorige</button><button id="afspelen" class="primair">Afspelen</button><button id="volgende">Volgende →</button></div><label>Afspeelsnelheid <select id="snelheid"><option value="1">1×</option><option value="10">10×</option><option value="60">60×</option></select></label><span id="tau"></span></div>
+</footer>
+<noscript>JavaScript is nodig voor tijdnavigatie. Het complete transcript staat in het bijbehorende .txt.invoer-bestand.</noscript>
+<script id="lesgegevens" type="application/json">__LESGEGEVENS__</script><script>/*__SCRIPT__*/</script>
+</body></html>

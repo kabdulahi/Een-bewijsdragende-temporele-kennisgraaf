@@ -1,0 +1,380 @@
+# Het woordenboek van de formele taal Ophangen, versie 3.
+# UTF-8. Dit is een beheerd vakwoordenboek, geen volledig Nederlands lexicon.
+# Het woordenboek ondersteunt instructies, transcripties en modelverklaringen.
+# Het controleert geen vrije Nederlandse spelling of wetenschappelijke waarheid.
+# Oude vorm: werkwoord | betekenis. Getypeerde vorm: soort | sleutel | betekenis.
+# Soorten: werkwoord, begrip, symbool. Symbolen zijn hoofdlettergevoelig.
+# Begrippen mogen spaties bevatten. I (identiteit) verschilt van i (imaginaire eenheid).
+# Conventie oscillatorvoorbeeld: hbar = m = omega = 1 in geschaalde eenheden.
+# Collegetijd en dimensionloze modeltijd tau zijn verschillende grootheden.
+# Wetenschappelijke referenties voor operatoren en quantumdynamica:
+# https://ocw.mit.edu/courses/22-51-quantum-theory-of-radiation-interactions-fall-2012/774a0d883fca9c660912cc029e58669e_MIT22_51F12_Ch2.pdf
+# https://www.damtp.cam.ac.uk/user/tong/qm/qm.pdf
+# https://arxiv.org/abs/2012.14490
+
+# Werkwoorden: toegestane beginwoorden van formele instructies.
+Analyseer | Onderzoek onderdelen en hun onderlinge verband.
+Beargumenteer | Onderbouw een standpunt met argumenten.
+Bereken | Bepaal een getalsmatige uitkomst en toon de berekening.
+Beschrijf | Geef kenmerken of een verloop weer.
+Bepaal | Stel een gevraagde eigenschap of waarde vast.
+Bewijs | Toon met een geldige redenering aan dat een uitspraak volgt.
+Controleer | Ga na of een resultaat aan de voorwaarden voldoet.
+Differentieer | Bepaal de afgeleide van een functie.
+Formuleer | Verwoord een antwoord of uitspraak nauwkeurig.
+Geef | Verstrek de gevraagde informatie.
+Herleid | Schrijf een uitdrukking in een eenvoudiger gelijkwaardige vorm.
+Herschrijf | Geef dezelfde inhoud in een andere vorm weer.
+Kies | Selecteer een mogelijkheid op basis van de opdracht.
+Lees | Neem de opgegeven tekst aandachtig door.
+Leg | Licht een begrip of redenering toe; gebruik bijvoorbeeld 'Leg uit'.
+Los | Bepaal oplossingen; gebruik bijvoorbeeld 'Los op'.
+Markeer | Duid de gevraagde onderdelen aan.
+Noem | Vermeld de gevraagde begrippen of voorbeelden.
+Onderzoek | Voer een gerichte analyse uit.
+Schrijf | Produceer de gevraagde tekst.
+Teken | Maak een grafische voorstelling.
+Vergelijk | Benoem overeenkomsten en verschillen.
+Verklaar | Geef een onderbouwde verklaring.
+Vertaal | Zet de tekst om naar de gevraagde taal.
+Vat | Geef de kern weer; gebruik bijvoorbeeld 'Vat samen'.
+werkwoord | Benader | Bepaal een waarde of beschrijving met een aangegeven nauwkeurigheid.
+werkwoord | Beoordeel | Weeg een uitkomst af tegen expliciete criteria.
+werkwoord | Benoem | Geef de passende naam of aanduiding.
+werkwoord | Beschouw | Neem een aangegeven object of situatie als uitgangspunt.
+werkwoord | Bestudeer | Onderzoek de opgegeven bron of het opgegeven verschijnsel.
+werkwoord | Classificeer | Deel objecten in volgens vastgelegde eigenschappen.
+werkwoord | Combineer | Breng gegevens of bewerkingen samen.
+werkwoord | Concludeer | Trek een gevolgtrekking uit de gegeven argumenten.
+werkwoord | Construeer | Bouw een object dat aan de opgegeven voorwaarden voldoet.
+werkwoord | Definieer | Leg de betekenis van een begrip of symbool nauwkeurig vast.
+werkwoord | Demonstreer | Toon een werking of samenhang met een voorbeeld.
+werkwoord | Diagonaliseer | Bepaal een basis waarin een diagonaliseerbare operator diagonaal is.
+werkwoord | Evalueer | Bepaal een waarde of beoordeel een resultaat binnen de context.
+werkwoord | Factoriseer | Schrijf een uitdrukking als een product van factoren.
+werkwoord | Generaliseer | Breid een uitspraak uit naar een ruimere klasse onder passende voorwaarden.
+werkwoord | Identificeer | Stel vast welk object, begrip of verband aanwezig is.
+werkwoord | Illustreer | Verduidelijk een begrip met een voorbeeld of afbeelding.
+werkwoord | Integreer | Bepaal een integraal met de aangegeven variabele en grenzen.
+werkwoord | Interpreteer | Verbind een formele uitkomst met haar betekenis in de context.
+werkwoord | Introduceer | Voer een nieuw begrip, symbool of model in.
+werkwoord | Leid | Ontwikkel een gevolg uit uitgangspunten; gebruik bijvoorbeeld 'Leid af'.
+werkwoord | Lineariseer | Benader een uitdrukking lokaal tot en met de eerste orde.
+werkwoord | Meet | Bepaal een grootheid met een beschreven meetprocedure.
+werkwoord | Modelleer | Beschrijf een systeem met expliciete variabelen en aannamen.
+werkwoord | Motiveer | Geef redenen voor een keuze of stap.
+werkwoord | Normaliseer | Schaal een object zodat het aan de aangegeven normvoorwaarde voldoet.
+werkwoord | Noteer | Leg een antwoord, waarneming of tussenstap schriftelijk vast.
+werkwoord | Onderscheid | Benoem het relevante verschil tussen begrippen of objecten.
+werkwoord | Orden | Plaats onderdelen in een opgegeven volgorde.
+werkwoord | Plot | Geef waarden grafisch weer met benoemde assen.
+werkwoord | Projecteer | Bepaal de component van een vector in een gegeven deelruimte.
+werkwoord | Reconstrueer | Herstel een structuur of redenering uit beschikbare gegevens.
+werkwoord | Reduceer | Breng een probleem terug tot minder variabelen of een eenvoudiger vorm.
+werkwoord | Reflecteer | Onderzoek de aannamen en beperkingen van een aanpak.
+werkwoord | Registreer | Leg gegevens systematisch vast.
+werkwoord | Schets | Geef de belangrijkste kenmerken van een grafiek of redenering weer.
+werkwoord | Schat | Bepaal een onderbouwde orde van grootte of een benadering.
+werkwoord | Selecteer | Kies onderdelen volgens de aangegeven voorwaarden.
+werkwoord | Simuleer | Bereken modelgedrag met een beschreven rekenprocedure.
+werkwoord | Specificeer | Leg de eigenschappen en voorwaarden volledig vast.
+werkwoord | Structureer | Breng een inhoudelijke indeling en volgorde aan.
+werkwoord | Substitueer | Vervang een variabele of uitdrukking door een gegeven equivalent.
+werkwoord | Toets | Onderzoek of een bewering voldoet aan een criterium.
+werkwoord | Transformeer | Zet een object volgens een aangegeven afbeelding om.
+werkwoord | Valideer | Controleer de vastgelegde regels en rapporteer afwijkingen.
+werkwoord | Verbind | Maak het verband tussen onderdelen expliciet.
+werkwoord | Verifieer | Ga onafhankelijk na of een resultaat klopt binnen de aannamen.
+werkwoord | Visualiseer | Geef gegevens of een modeltoestand zichtbaar weer.
+werkwoord | Werk | Ontwikkel een opgave of redenering verder; gebruik bijvoorbeeld 'Werk uit'.
+werkwoord | Weerleg | Toon met een tegenvoorbeeld of redenering dat een bewering niet geldt.
+
+# Klassieke dynamica en de overgang naar quantumdynamica.
+begrip | klassieke dynamica | Theorie van de tijdontwikkeling van klassieke mechanische systemen.
+begrip | quantumdynamica | Theorie van de tijdontwikkeling van quantumtoestanden en observabelen.
+begrip | quantummechanica | Theorie waarin toestanden meetkansen bepalen en observabelen door operatoren worden beschreven.
+begrip | klassieke limiet | Regime waarin quantumvoorspellingen onder passende aannamen klassieke voorspellingen benaderen.
+begrip | correspondentieprincipe | Eis dat een quantumtheorie in een passend regime de klassieke beschrijving benadert.
+begrip | configuratieruimte | Ruimte van toegestane posities of gegeneraliseerde coordinaten van een systeem.
+begrip | gegeneraliseerde coordinaat | Onafhankelijke variabele die de configuratie van een systeem beschrijft.
+begrip | snelheid | Tijdafgeleide van een positie of gegeneraliseerde coordinaat.
+begrip | versnelling | Tijdafgeleide van de snelheid.
+begrip | massa | Parameter die de traagheid van een deeltje beschrijft.
+begrip | kracht | In Newtonse mechanica de tijdafgeleide van de impuls.
+begrip | impuls | Bewegingsgrootheid; de canonieke impuls is de afgeleide van de Lagrangiaan naar de snelheid.
+begrip | canonieke impuls | Grootheid p_i = dL/dqdot_i; deze kan bij elektromagnetische koppeling verschillen van m maal snelheid.
+begrip | kinetische energie | Energie die in een eenvoudig deeltjesmodel samenhangt met beweging.
+begrip | potentiaalenergie | Energie als functie van de configuratie voor een conservatieve interactie.
+begrip | conservatieve kracht | Kracht die lokaal uit de negatieve gradient van een potentiaal volgt.
+begrip | Lagrangiaan | Functie van coordinaten, snelheden en tijd; voor veel systemen L = T - V.
+begrip | actie | Tijdintegraal van de Lagrangiaan langs een pad.
+begrip | stationaire actie | Voorwaarde dat de eerste variatie van de actie nul is bij vastgehouden eindpunten.
+begrip | variatieprincipe | Formulering van bewegingsvergelijkingen via stationariteit van een functionaal.
+begrip | Euler-Lagrangevergelijking | Bewegingsvergelijking d/dt(dL/dqdot_i) - dL/dq_i = 0.
+begrip | Legendretransformatie | Omzetting die bij geschikte niet-ontaarding snelheden vervangt door hun canonieke impulsen.
+begrip | Hamiltoniaan | Klassieke functie of quantumoperator die de tijdontwikkeling genereert; voor veel systemen de totale energie.
+begrip | Hamiltonvergelijkingen | Canonieke vergelijkingen qdot_i = dH/dp_i en pdot_i = -dH/dq_i.
+begrip | fasevlak | Tweedimensionale faseruimte met een coordinaat en de bijbehorende canonieke impuls.
+begrip | faseruimte | Ruimte van canonieke coordinaten en impulsen waarin een klassieke toestand een punt is.
+begrip | fasepunt | Punt in de klassieke faseruimte dat alle coordinaten en impulsen vastlegt.
+begrip | baan | Tijdgeordende verzameling van klassieke fasepunten.
+begrip | beginvoorwaarde | Gegevens op een begingetijdstip die een tijdontwikkelingsprobleem specificeren.
+begrip | randvoorwaarde | Voorwaarde aan de rand van een ruimtelijk domein of aan eindpunten van een probleem.
+begrip | symplectische vorm | Gesloten niet-ontaarde tweevorm die de geometrie van Hamiltonse dynamica vastlegt.
+begrip | canonieke transformatie | Transformatie van faseruimtevariabelen die de symplectische structuur behoudt.
+begrip | Poissonhaak | Klassieke antisymmetrische bewerking {f,g} = som_i(df/dq_i dg/dp_i - df/dp_i dg/dq_i).
+begrip | Liouvillevergelijking | Evolutievergelijking voor een klassieke kansdichtheid onder Hamiltonse stroming.
+begrip | stelling van Liouville | Hamiltonse tijdontwikkeling behoudt het symplectische faseruimtevolume.
+begrip | behoudswet | Uitspraak dat een grootheid tijdens de betreffende dynamica constant blijft.
+begrip | symmetrie | Transformatie die de relevante structuur of fysische voorspellingen behoudt.
+begrip | stelling van Noether | Verband tussen continue symmetrieen van de actie en behouden grootheden.
+begrip | vrijheidsgraad | Onafhankelijke coordinaat van een mechanisch systeem.
+begrip | harmonische oscillator | Systeem met een kwadratische potentiaal V(q) = m omega^2 q^2 / 2.
+begrip | hoekfrequentie | Frequentieparameter omega in radialen per tijdseenheid; de periode is 2 pi / omega.
+begrip | periode | Tijdsduur waarna een periodieke beweging zich herhaalt.
+begrip | resonantie | Sterke respons wanneer een aandrijving aansluit bij een eigenfrequentie, afhankelijk van demping.
+begrip | anharmoniciteit | Afwijking van een zuiver kwadratische oscillatorpotentiaal.
+begrip | chaos | Gevoelige afhankelijkheid van beginvoorwaarden in geschikte niet-lineaire dynamische systemen.
+begrip | Ehrenfesttijd | Modelschaal waarboven een gekozen semiclassische benadering haar nauwkeurigheid kan verliezen.
+begrip | Hamilton-Jacobivergelijking | Klassieke vergelijking dS/dt + H(q,dS/dq,t) = 0 voor de hoofdactie.
+
+# Toestanden, operatoren en metingen.
+begrip | Hilbertruimte | Volledige vectorruimte met een inproduct, doorgaans over de complexe getallen.
+begrip | toestandsvector | Vector die een zuivere quantumtoestand vertegenwoordigt, doorgaans met norm een.
+begrip | quantumtoestand | Object dat de statistiek van alle toegestane metingen vastlegt.
+begrip | zuivere toestand | Quantumtoestand die door een enkele straal in de Hilbertruimte wordt beschreven.
+begrip | gemengde toestand | Toestand met een dichtheidsoperator die geen projector van rang een is.
+begrip | straal | Verzameling van niet-nul vectoren die alleen door een niet-nul complexe factor verschillen.
+begrip | golffunctie | Complexe amplitude van een toestandsvector in bijvoorbeeld de positiebasis.
+begrip | amplitude | Complex getal waarvan de absolute waarde in het kwadraat een meetkans of kansdichtheid kan bepalen.
+begrip | kansdichtheid | Niet-negatieve functie waarvan de integraal over een gebied de kans op dat gebied geeft.
+begrip | Bornregel | Regel die meetkansen bepaalt uit de toestand en de bijbehorende meetoperatoren.
+begrip | normalisatie | Voorwaarde dat de totale meetkans een is, bijvoorbeeld de integraal van abs(psi)^2.
+begrip | superpositie | Lineaire combinatie van quantumtoestandsvectoren met complexe coefficienten.
+begrip | globale fase | Gemeenschappelijke complexe fasefactor van een toestandsvector die dezelfde zuivere toestand vertegenwoordigt.
+begrip | relatieve fase | Faseverschil tussen componenten van een superpositie dat interferentie kan beinvloeden.
+begrip | interferentie | Versterking of verzwakking van meetkansen door optelling van complexe amplituden.
+begrip | bra | Element van de duale ruimte dat in Diracnotatie links in een inproduct staat.
+begrip | ket | Toestandsvector geschreven in Diracnotatie.
+begrip | Diracnotatie | Notatie met bra's en kets voor vectoren, inproducten en operatoren.
+begrip | operator | Afbeelding die op vectoren werkt; in quantummechanica doorgaans lineair op een gespecificeerd domein.
+begrip | operatordomein | Verzameling vectoren waarop de werking van een operator is gedefinieerd.
+begrip | dichte deelruimte | Deelruimte waarvan de afsluiting de gehele beschouwde ruimte is.
+begrip | geadjungeerde operator | Operator A-dagger die via het inproduct uit A volgt, met een eigen bijbehorend domein.
+begrip | hermitische matrix | Complexe vierkante matrix die gelijk is aan haar geconjugeerde getransponeerde.
+begrip | symmetrische operator | Dicht gedefinieerde operator waarvoor het inproduct symmetrisch voldoet; zelfadjointheid vraagt bovendien passende domeingelijkheid.
+begrip | zelfadjoint | Eigenschap A = A-dagger inclusief gelijkheid van hun domeinen; bij onbegrensde operatoren is die domeineis essentieel.
+begrip | observabele | Meetbare grootheid die in het gebruikelijke projectieve formalisme door een zelfadjointe operator wordt voorgesteld.
+begrip | spectrum | Verzameling spectrale waarden van een operator; deze kan discreet en continu zijn.
+begrip | eigenwaarde | Getal lambda waarvoor A v = lambda v geldt met een niet-nul vector v.
+begrip | eigenvector | Niet-nul vector waarvan een operator alleen de schaal verandert.
+begrip | eigentoestand | Quantumtoestand die bij een eigenwaarde van een bepaalde observabele hoort.
+begrip | ontaarding | Situatie waarin meerdere lineair onafhankelijke eigentoestanden dezelfde eigenwaarde hebben.
+begrip | spectraaltheorema | Representatie van een zelfadjointe operator met een spectrale maat, met sommen in het zuiver discrete geval.
+begrip | projector | Operator P met P^2 = P; een orthogonale projector is daarnaast zelfadjoint.
+begrip | verwachtingswaarde | Gemiddelde meetuitkomst van een observabele bij herhaalde voorbereiding van dezelfde toestand.
+begrip | variantie | Verwachtingswaarde van het kwadraat van de afwijking van het gemiddelde.
+begrip | standaardafwijking | Niet-negatieve vierkantswortel van de variantie.
+begrip | onzekerheidsrelatie | Ondergrens voor de spreidingen van observabelen, afhankelijk van hun commutator en de toestand.
+begrip | Robertsonrelatie | Relatie DeltaA DeltaB >= abs(<[A,B]>)/2 wanneer de betrokken producten goed zijn gedefinieerd.
+begrip | commutator | Operatorbewerking [A,B] = AB - BA op een gemeenschappelijk geschikt domein.
+begrip | anticommutator | Operatorbewerking {A,B} = AB + BA; deze notatie moet van de klassieke Poissonhaak worden onderscheiden.
+begrip | canonieke commutatierelatie | Quantumrelatie [qhat,phat] = i hbar I op een passend gemeenschappelijk domein.
+begrip | compatibele observabelen | Observabelen die gezamenlijk meetbaar zijn; voor onbegrensde operatoren vraagt dit passende spectrale commutatie.
+begrip | dichtheidsoperator | Positieve spoor-klasse-operator rho met spoor een die een quantumtoestand beschrijft.
+begrip | dichtheidsmatrix | Matrixrepresentatie van een dichtheidsoperator in een gekozen basis.
+begrip | zuiverheid | Grootheid Tr(rho^2); voor een zuivere toestand is deze gelijk aan een.
+begrip | projectieve meting | Ideaal meetmodel met orthogonale projectoren en kansen volgens de Bornregel.
+begrip | verstrengeling | Eigenschap van een samengestelde toestand die niet als een mengsel van producttoestanden kan worden geschreven.
+begrip | gereduceerde toestand | Toestand van een deelsysteem verkregen door het partiele spoor over de overige vrijheidsgraden.
+begrip | partieel spoor | Bewerking die de dichtheidsoperator van een deelsysteem oplevert.
+begrip | decoherentie | Onderdrukking van interferentietermen in een gekozen beschrijving door koppeling aan ongeobserveerde vrijheidsgraden.
+
+# Tijdontwikkeling, oscillator en semiclassische beschrijving.
+begrip | unitaire operator | Operator U met U-dagger U = U U-dagger = I die inproducten behoudt.
+begrip | unitaire evolutie | Tijdontwikkeling van een gesloten quantumsysteem die door unitaire operatoren wordt beschreven.
+begrip | tijdsevolutieoperator | Operator U(t,t0) die een toestand op t0 naar een toestand op t afbeeldt.
+begrip | propagator | Kern of de operator die de quantumtijdontwikkeling tussen twee tijdstippen beschrijft.
+begrip | Schrodingervergelijking | Vergelijking i hbar dpsi/dt = H psi voor de tijdontwikkeling van een toestandsvector.
+begrip | Schrodingerbeeld | Beschrijving waarin toestanden de dynamische tijdafhankelijkheid dragen en operatoren alleen expliciete tijdafhankelijkheid kunnen hebben.
+begrip | Heisenbergbeeld | Beschrijving waarin de dynamische tijdafhankelijkheid naar de operatoren wordt verplaatst.
+begrip | Heisenbergvergelijking | Vergelijking dA_H/dt = (i/hbar)[H_H,A_H] + (dA/dt)_H.
+begrip | interactiebeeld | Beschrijving waarin de tijdontwikkeling wordt verdeeld over toestanden en operatoren via een gekozen splitsing van H.
+begrip | tijdordening | Ordening van operatorfactoren naar tijd, nodig wanneer Hamiltonianen op verschillende tijden niet commuteren.
+begrip | stationaire toestand | Energietoestand waarvan bij een tijdonafhankelijke Hamiltoniaan alleen een globale fase verandert.
+begrip | stelling van Ehrenfest | Exacte vergelijkingen voor verwachtingswaarden die onder extra aannamen klassieke bewegingsvergelijkingen benaderen.
+begrip | grondtoestand | Toestand met de laagste beschikbare energie van een Hamiltoniaan, wanneer zo'n toestand bestaat.
+begrip | nulpuntsenergie | Grondtoestandsenergie boven het gekozen klassieke minimum, voor de oscillator hbar omega / 2.
+begrip | ladderoperator | Operator die tussen opeenvolgende eigenwaarden in een geschikte basis overgaat.
+begrip | annihilatieoperator | Ladderoperator a die het oscillatorquantumgetal met een verlaagt en de grondtoestand vernietigt.
+begrip | creatieoperator | Geadjungeerde ladderoperator a-dagger die het oscillatorquantumgetal met een verhoogt.
+begrip | getaloperator | Operator N = a-dagger a met eigenwaarden n = 0,1,2,... voor de oscillator.
+begrip | Focktoestand | Eigentoestand van een getaloperator met een bepaald bezettingsgetal.
+begrip | coherente toestand | Genormaliseerde eigentoestand van de annihilatieoperator, met een complexe eigenwaarde alpha.
+begrip | coherente amplitude | Complex label alpha van een coherente toestand; in geschaalde eenheden alpha = (qc + i pc)/sqrt(2).
+begrip | verplaatsingsoperator | Unitaire operator D(alpha) = exp(alpha a-dagger - alpha* a) die de oscillatorgrondtoestand coherent verplaatst.
+begrip | Gaussisch golfpakket | Golfpakket met een Gaussische vorm van de amplitude of kansdichtheid, met eventuele fasevariatie.
+begrip | golfpakket | Superpositie van golven die in een relevant representatiegebied gelokaliseerd kan zijn.
+begrip | dispersie | Verandering van de vorm of breedte van een golfpakket door verschillende fasesnelheden.
+begrip | squeezing | Vermindering van de spreiding van een quadratuur ten koste van de geconjugeerde quadratuur.
+begrip | quadratuur | Een geschaalde canonieke positie- of impulscomponent van een oscillatormodus.
+begrip | Wignerfunctie | Reele quasi-kansfunctie op de faseruimte met correcte positie- en impulsmarginalen; zij kan negatief zijn.
+begrip | quasi-kansverdeling | Representatie met eigenschappen van een kansverdeling die niet overal niet-negatief hoeft te zijn.
+begrip | marginale verdeling | Verdeling die ontstaat door de overige variabelen uit een gezamenlijke representatie weg te integreren.
+begrip | faseportret | Afbeelding van banen, velden of verdelingen in een faseruimte.
+begrip | Weylkwantisatie | Voorschrift dat geschikte faseruimtefuncties aan symmetrisch geordende quantumoperatoren koppelt.
+begrip | Weylsymbool | Faseruimtefunctie die bij een operator hoort volgens de Weylcorrespondentie.
+begrip | Moyalhaak | Quantumvervorming van de Poissonhaak in de Wigner-Weylrepresentatie.
+begrip | semiclassische benadering | Benadering die klassieke structuren gebruikt terwijl leidende quantumcorrecties behouden blijven.
+begrip | WKB-benadering | Semiclassische vorm voor golffuncties in regimes waarin de lokale golflengte voldoende langzaam verandert.
+begrip | keerpunt | Plaats waar in een eendimensionaal klassiek probleem de kinetische energie nul wordt.
+begrip | tunnelwerking | Quantumverschijnsel waarbij amplitude een klassiek verboden potentiaalgebied binnendringt en transmissie mogelijk kan zijn.
+begrip | padintegraal | Formele representatie van amplituden als bijdragen van paden met fase exp(i S / hbar).
+begrip | stationaire fase | Asymptotische methode waarbij gebieden met stationaire fase de leidende bijdrage aan een oscillerende integraal leveren.
+begrip | operatorordening | Keuze van de volgorde van niet-commuterende operatoren bij het construeren van een operatoruitdrukking.
+begrip | kwantisatie | Constructie van een quantumtheorie uit gekozen klassieke gegevens, die aanvullende keuzes kan vereisen.
+begrip | kwadratische Hamiltoniaan | Hamiltoniaan die hoogstens kwadratisch is in canonieke variabelen; de Wigner-evolutie heeft dan een klassieke transportvorm.
+begrip | geisoleerd systeem | Systeem waarvan de relevante dynamica geen uitwisseling met een omgeving bevat.
+begrip | open quantumsysteem | Quantumsysteem waarvan de toestand wordt beinvloed door koppeling aan een omgeving.
+begrip | von Neumannvergelijking | Vergelijking i hbar drho/dt = [H,rho] voor de dichtheidsoperator van een gesloten systeem.
+begrip | quantumchaos | Studie van quantumverschijnselen die verband houden met klassieke chaotische dynamica.
+
+# Wiskundige begrippen voor de transcripties en de modeltoestand.
+begrip | scalair | Getal uit het getallenlichaam waarover een vectorruimte is gedefinieerd.
+begrip | vector | Element van een vectorruimte dat kan worden opgeteld en met scalairen vermenigvuldigd.
+begrip | vectorruimte | Verzameling met optelling en scalaire vermenigvuldiging die aan de vectorruimteaxioma's voldoen.
+begrip | basis | Lineair onafhankelijke verzameling die de bedoelde ruimte opspant in de aangegeven betekenis.
+begrip | orthonormale basis | Basis van onderling orthogonale vectoren met norm een.
+begrip | inproduct | Positief-definiete sesquilineaire bewerking die onder meer lengtes en hoeken bepaalt.
+begrip | norm | Niet-negatieve maat voor de grootte van een vector die aan de normaxioma's voldoet.
+begrip | orthogonaliteit | Eigenschap dat het inproduct van twee vectoren nul is.
+begrip | lineariteit | Eigenschap dat een afbeelding optelling en scalaire vermenigvuldiging behoudt.
+begrip | matrix | Rechthoekig schema van getallen dat bijvoorbeeld een lineaire afbeelding in gekozen bases weergeeft.
+begrip | tensorproduct | Constructie van een samengestelde vectorruimte die bilineaire combinaties lineair representeert.
+begrip | determinant | Scalaire matrixgrootheid die onder meer de omkeerbaarheid van een vierkante matrix aangeeft.
+begrip | spoor | Som van de diagonale matrixelementen; voor geschikte operatoren onafhankelijk van de orthonormale basis.
+begrip | complexe conjugatie | Bewerking die in een complex getal het teken van het imaginaire deel omkeert.
+begrip | reeel deel | Reele component x van een complex getal x + i y.
+begrip | imaginair deel | Reele coefficient y van i in een complex getal x + i y.
+begrip | absolute waarde | Grootte van een reeel of complex getal.
+begrip | exponentiele functie | Functie exp(z), die ook via een reeks voor geschikte operatoren kan worden gedefinieerd.
+begrip | Taylorreeks | Lokale machtreeks van een voldoende geschikte functie rond een gekozen punt.
+begrip | afgeleide | Lokale veranderingssnelheid van een functie ten opzichte van een variabele.
+begrip | partiele afgeleide | Afgeleide naar een variabele waarbij de andere onafhankelijke variabelen vaststaan.
+begrip | integraal | Bewerking die onder passende voorwaarden een continue som of antiafgeleide vastlegt.
+begrip | differentiaalvergelijking | Vergelijking waarin een onbekende functie en haar afgeleiden voorkomen.
+begrip | eigenwaardeprobleem | Probleem om eigenwaarden en bijbehorende eigenvectoren of eigenfuncties te bepalen.
+begrip | Fouriertransformatie | Omzetting tussen een functie en haar frequentie- of golfgetalrepresentatie.
+begrip | Gaussfunctie | Functie met een exponent die een negatief kwadratisch argument bevat.
+begrip | Hermitepolynoom | Polynoom uit de familie die voorkomt in de positie-eigenfuncties van de harmonische oscillator.
+begrip | Diracdelta | Distributie die bij integratie de waarde van een geschikte testfunctie op een punt selecteert.
+begrip | Kroneckerdelta | Symbool delta_ij dat een is voor i = j en anders nul.
+begrip | covariantie | Maat voor gezamenlijke afwijkingen; voor quantumobservabelen wordt vaak een symmetrisch product gebruikt.
+begrip | dimensieanalyse | Controle van vergelijkingen op consistente fysische dimensies.
+begrip | dimensionloze grootheid | Grootheid zonder fysische dimensie, vaak gevormd door delen door een gekozen schaal.
+begrip | natuurlijke eenheden | Eenhedenstelsel waarin gekozen constanten numeriek een worden gemaakt.
+begrip | truncatie | Afkappen van een oneindige reeks, basis of domein om een eindige berekening te verkrijgen.
+begrip | discretisatie | Vervanging van een continu probleem door waarden op een rooster of andere discrete structuur.
+begrip | convergentie | Naderen van een bepaalde limiet door een rij, reeks of benaderingsprocedure.
+begrip | numerieke fout | Afwijking door bijvoorbeeld discretisatie, afronding of eindige rekenprecisie.
+begrip | analytische oplossing | Oplossing die door exacte wiskundige uitdrukkingen of functies wordt beschreven.
+begrip | benaderingsfout | Verschil tussen een exacte grootheid en de waarde volgens een aangegeven benadering.
+
+# Taal, transcriptie, zoekfunctie en tijdgestuurde visualisatie.
+begrip | Standaardnederlands | Algemeen bruikbare standaardvarieteit van het Nederlands met gedeelde taalconventies.
+begrip | hoorcollege | Mondelinge academische uiteenzetting met een samenhangende inhoudelijke opbouw.
+begrip | transcript | Schriftelijke weergave van gesproken tekst, eventueel met tijdcodes en regieaanduidingen.
+begrip | transcriptie | Omzetting van gesproken tekst naar schrift of het resultaat van die omzetting.
+begrip | spreektekst | Tekst die bedoeld is om tijdens het hoorcollege daadwerkelijk uit te spreken.
+begrip | spreektempo | Aantal uitgesproken woorden per minuut; de feitelijke duur hangt ook af van pauzes en uitspraak.
+begrip | collegetijd | Verstreken tijd binnen het hoorcollege, weergegeven in minuten of seconden.
+begrip | modeltijd | Tijdparameter die de gesimuleerde fysische toestand bepaalt, onafhankelijk van de gekozen afspeelsnelheid.
+begrip | dimensionloze modeltijd | Geschaalde tijd tau = omega t_phys; een koppeling aan collegetijd is een expliciete presentatiekeuze.
+begrip | afspeelsnelheid | Factor waarmee de presentatieklok ten opzichte van werkelijke verstreken tijd loopt.
+begrip | pauze | Bewust gereserveerde stilte of bedenktijd die bij de totale collegeduur meetelt.
+begrip | tijdcode | Numerieke plaatsaanduiding op de tijdlijn van het college.
+begrip | tijdlijn | Geordende voorstelling van gebeurtenissen of tekstsegmenten langs een tijdas.
+begrip | segment | Begrensd onderdeel van een transcriptie met een eigen tijdsinterval.
+begrip | lesfase | Onderdeel van een les of college met een titel en tijdsgrenzen.
+begrip | overgang | Verplaatsing van een presentatie of model tussen opeenvolgende toestanden.
+begrip | dialoogvenster | Venster boven de hoofdweergave waarin inhoud en bediening gegroepeerd worden aangeboden.
+begrip | modeltoestand | Verzameling variabelen die het model op een gekozen modeltijd beschrijft.
+begrip | symbolische toestand | Weergave van de toestand met symbolen, formules en hun actuele parameterwaarden.
+begrip | numerieke toestand | Weergave van de berekende waarden van modelgrootheden.
+begrip | driedimensionale visualisatie | Ruimtelijke weergave met drie grafische assen waarvan de betekenis expliciet wordt aangegeven.
+begrip | Blochbol | Bolvoorstelling van een enkele qubit; zuivere toestanden liggen op het oppervlak en gemengde binnenin.
+begrip | qubit | Quantumsysteem met een tweedimensionale toestandsruimte.
+begrip | formele taal | Taal waarvan toegestane vormen door expliciete regels worden bepaald.
+begrip | grammatica | Verzameling regels voor de vorm en combinatie van taalonderdelen.
+begrip | syntaxis | Toegestane vorm en ordening van symbolen en taalconstructies.
+begrip | semantiek | Betekenis die aan een taalconstructie wordt toegekend.
+begrip | lexicon | Verzameling woorden of termen met relevante taalkundige of inhoudelijke informatie.
+begrip | vakterm | Woord of uitdrukking met een specifieke betekenis binnen een vakgebied.
+begrip | definitie | Nauwkeurige vastlegging van de betekenis of kenmerken van een begrip.
+begrip | aanname | Uitgangspunt dat binnen een redenering of model wordt geaccepteerd.
+begrip | hypothese | Voorlopige uitspraak die binnen een onderzoek kan worden getoetst.
+begrip | argument | Reden die wordt aangevoerd ter ondersteuning van een uitspraak.
+begrip | gevolgtrekking | Uitspraak die door een redenering uit voorafgaande uitspraken wordt afgeleid.
+begrip | tegenvoorbeeld | Voorbeeld dat een algemeen geformuleerde uitspraak weerlegt.
+begrip | parser | Programmaonderdeel dat tekst volgens formele regels in een structuur omzet.
+begrip | validator | Programmaonderdeel dat een structuur aan vastgelegde geldigheidsregels toetst.
+begrip | woordenboek | Beheerde verzameling toegestane instructiewerkwoorden, begrippen en symboolbetekenissen.
+begrip | bronverwijzing | Aanduiding van de bron waarop een passage of uitspraak berust.
+begrip | zoekterm | Woord, frase of symbool waarmee documenten of woordenboekregels worden gezocht.
+begrip | ASCII | Tekencodering met 128 tekens die geschikt is voor eenvoudige terminaluitvoer.
+begrip | UTF-8 | Tekencodering voor Unicode waarmee onder meer Nederlandse en wetenschappelijke tekens kunnen worden opgeslagen.
+begrip | commandoregel | Tekstuele interface waarin een gebruiker een programma met argumenten start.
+
+# Symbolen: exacte, hoofdlettergevoelige sleutels, met conventies per context.
+symbool | q | Canonieke positiecoordinaat; als operator wordt qhat geschreven, als verwachtingswaarde qc of <q>.
+symbool | p | Canonieke impuls; als operator wordt phat geschreven, als verwachtingswaarde pc of <p>.
+symbool | H | Hamiltoniaan; oscillator H = p^2/(2m) + m omega^2 q^2/2, met operatorhoeden in de quantumtheorie.
+symbool | hbar | Gereduceerde constante van Planck h/(2 pi); numeriek een in het geschaalde oscillatormodel.
+symbool | psi | Golffunctie of toestandsvector volgens de context; een complexe amplitude en geen kansdichtheid.
+symbool | U | Unitaire tijdsevolutieoperator; bij tijdonafhankelijke H geldt U(t,t0) = exp(-i H (t-t0)/hbar).
+symbool | rho | Quantumdichtheidsoperator met rho >= 0 en Tr(rho) = 1; klassieke kansdichtheid alleen wanneer uitdrukkelijk aangegeven.
+symbool | alpha | Complex label van een coherente toestand; alpha(tau) = alpha(0) exp(-i tau).
+symbool | a | Annihilatieoperator; in geschaalde oscillatoreenheden a = (qhat + i phat)/sqrt(2).
+symbool | adag | Creatieoperator a-dagger; in geschaalde oscillatoreenheden adag = (qhat - i phat)/sqrt(2).
+symbool | W | Wignerfunctie; voor het coherente voorbeeld W(q,p) = exp(-(q-qc)^2-(p-pc)^2)/pi, in het algemeen mogelijk negatief.
+symbool | S | Klassieke actie of Hamiltonse hoofdactie, afhankelijk van de aangegeven argumenten.
+symbool | L | Lagrangiaan; voor een gewone oscillator L = m qdot^2/2 - m omega^2 q^2/2.
+symbool | omega | Hoekfrequentie van de oscillator; numeriek een in de gekozen geschaalde eenheden.
+symbool | tau | Dimensionloze fysische modeltijd omega t_phys; de koppeling aan de collegeklok wordt apart gespecificeerd.
+symbool | E | Energie of energie-eigenwaarde, afhankelijk van de context.
+symbool | Deltaq | Standaardafwijking van positie sqrt(<q^2>-<q>^2); voor het coherente geschaalde voorbeeld 1/sqrt(2).
+symbool | Deltap | Standaardafwijking van impuls sqrt(<p^2>-<p>^2); voor het coherente geschaalde voorbeeld 1/sqrt(2).
+symbool | commutator | [A,B] = AB - BA; voor canonieke qhat en phat gelijk aan i hbar I op een geschikt domein.
+symbool | poisson | {f,g} = som_i(df/dq_i dg/dp_i - df/dp_i dg/dq_i); in het bijzonder {q,p} = 1.
+symbool | I | Identiteitsoperator die iedere vector onveranderd laat; hoofdletter I verschilt van imaginaire i.
+symbool | t | Tijdvariabele waarvan de eenheid en context expliciet worden vermeld; in de presentatie doorgaans collegetijd.
+symbool | x | Reele positievariabele in de positierepresentatie psi(x,t), of horizontale grafiekcoordinaat wanneer benoemd.
+symbool | m | Deeltjesmassa; numeriek een in het geschaalde oscillatormodel.
+symbool | V | Potentiaalenergie als functie van positie en eventueel tijd.
+symbool | lambda | Eigenwaardeparameter of, wanneer expliciet vermeld, een andere modelparameter.
+symbool | n | Niet-negatief geheel oscillatorquantumgetal met energie E_n = hbar omega (n + 1/2).
+symbool | pi | Wiskundige constante die de verhouding tussen cirkelomtrek en diameter aangeeft.
+symbool | i | Imaginaire eenheid met i^2 = -1; kleine letter i verschilt van identiteitsoperator I.
+symbool | N | Getaloperator N = adag a; de eigenwaarde in Focktoestand n is n.
+symbool | qhat | Positieoperator; in de positierepresentatie vermenigvuldiging met x op een passend domein.
+symbool | phat | Impulsoperator; in de positierepresentatie -i hbar d/dx op een passend domein.
+symbool | qc | Positieverwachtingswaarde van het coherente oscillatorpakket, qc = sqrt(2) Re(alpha) in geschaalde eenheden.
+symbool | pc | Impulsverwachtingswaarde van het coherente oscillatorpakket, pc = sqrt(2) Im(alpha) in geschaalde eenheden.
+symbool | q0 | Beginwaarde van de klassieke positie of coherente positieverwachtingswaarde.
+symbool | p0 | Beginwaarde van de klassieke impuls of coherente impulsverwachtingswaarde.
+symbool | alpha0 | Coherente amplitude op tau = 0, gelijk aan (q0 + i p0)/sqrt(2) in geschaalde eenheden.
+symbool | qdot | Tijdafgeleide van de coordinaat q naar de benoemde fysische tijdvariabele.
+symbool | pdot | Tijdafgeleide van de canonieke impuls p naar de benoemde fysische tijdvariabele.
+symbool | T | Kinetische energie wanneer gekoppeld aan L = T - V; andere toepassingen moeten lokaal worden gedefinieerd.
+symbool | D | Verplaatsingsoperator D(alpha) die de grondtoestand naar een coherente toestand afbeeldt.
+symbool | Tr | Spoor van een matrix of geschikte operator; Tr(rho A) geeft de verwachtingswaarde wanneer gedefinieerd.
+symbool | Re | Bewerking die het reele deel van een complex getal neemt.
+symbool | Im | Bewerking die het imaginaire deel van een complex getal als reeel getal neemt.
+symbool | abs | Absolute waarde of complexe modulus; abs(psi)^2 is de positiekansdichtheid voor een genormaliseerde golffunctie.
+symbool | exp | Exponentiele functie; exp(-i tau) beschrijft een rotatie van de coherente amplitude in het complexe vlak.
+symbool | sqrt | Niet-negatieve vierkantswortel voor niet-negatieve reele argumenten.
+symbool | delta | Kroneckerdelta of Diracdelta volgens het expliciet aangegeven discrete of continue domein.
+symbool | DeltaE | Standaardafwijking van energie, niet het verschil tussen twee energieniveaus tenzij zo gedefinieerd.
+symbool | h | Constante van Planck; h = 2 pi hbar.
+symbool | t_phys | Fysische tijd voor de modeldynamica; tau = omega t_phys, onafhankelijk van presentatieversnelling.
+symbool | t_college | Tijd sinds het begin van het hoorcollege, voor dit voorbeeld van nul tot zestig minuten.

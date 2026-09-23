@@ -1,5 +1,69 @@
 # Ophangen
 
+## Auteur en gebruiksvoorwaarden
+
+Auteur: **Karim Abdulahi**. Homepage: [https://1e100.nl/](https://1e100.nl/).
+E-mail: [karim.abdulahi@outlook.com](mailto:karim.abdulahi@outlook.com).
+
+Ophangen heeft een eigen restrictieve
+[licentie voor niet-commercieel wetenschappelijk onderzoek](LICENSE).
+Je mag de bron lezen en een noodzakelijke privékopie downloaden of klonen om
+het programma lokaal voor dat onderzoek uit te voeren. Instellingen kiezen en
+eigen onderzoeksinvoer aanbieden via de bestaande interfaces zijn toegestaan.
+Presentaties en logs maken, opslaan en bekijken voor dat eigen onderzoek mag ook.
+Wijzigen, verspreiden, hergebruiken in andere projecten, aanbieden als dienst
+en commercieel gebruik vereisen voorafgaande schriftelijke toestemming.
+Eigen bevindingen en numerieke resultaten uit toegestaan softwaregebruik mogen
+met naamsvermelding worden gepubliceerd; de licentie bevat de voorwaarden.
+
+Dit is **source-available, geen opensourceproject**:
+[opensource staat geen beperking tot een onderzoeksdoel toe](https://opensource.org/osd).
+De onderstaande uitvoervoorbeelden vallen onder deze gebruiksvoorwaarden.
+Bestaande rechten, wettelijke uitzonderingen en rechten uit toepasselijke
+hostingvoorwaarden blijven gelden. Meegeleverde onderdelen van derden behouden
+hun eigen licentie; zie [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+### Afzonderlijke voorwaarden voor onderzoek.pdf
+
+[onderzoek.pdf](onderzoek.pdf), *Een bewijsdragende temporele kennisgraaf*,
+vermeldt **Karim Abdulahi** als auteur en rechthebbende op zijn oorspronkelijke
+bijdrage. De PDF bevat een auteursvoorblad en auteursmetadata. Voor dit document
+gelden de [afzonderlijke inzagevoorwaarden](ONDERZOEK_LICENSE.txt):
+uitsluitend persoonlijke inzage voor niet-commerciële wetenschappelijke
+doeleinden. Ander gebruik van beschermde inhoud vereist voorafgaande
+schriftelijke toestemming, behoudens toepasselijke wettelijke uitzonderingen.
+De softwarelicentie en haar toestemming voor eigen softwareonderzoeksresultaten
+geven geen aanvullende rechten op dit manuscript.
+
+De huidige PDF is gemarkeerd als **voorpublicatie**. Karim behoudt het recht
+zijn eigen oorspronkelijke werk later te herzien en als bachelor- of
+masterscriptie aan te bieden. Voor het beoogde BSc-traject Computing Science
+aan Radboud moet de opleiding vooraf met het eindproject instemmen; deze
+licentie vervangt die goedkeuring niet. De voorwaarden staan verwerking bij
+latere schriftelijke indiening toe voor begeleiding, beoordeling,
+integriteitscontrole en overeengekomen archivering.
+[ONDERZOEK_HERKOMST.md](ONDERZOEK_HERKOMST.md) bevat de geraadpleegde
+opleidingsregels, een herkomstverklaring en een conceptverzoek om het
+voorgenomen hergebruik schriftelijk af te stemmen.
+
+Wetenschappelijke feiten en ideeën op zichzelf worden hiermee geen exclusief
+eigendom; auteursrecht beschermt de oorspronkelijke uitwerking.
+[Uitleg van de Federatie Auteursrechtbelangen](https://www.auteursrecht.nl/auteursrecht/wat-wordt-niet-beschermd).
+Voor aanvullende afspraken over gebruik van verstrekte onderzoeksinformatie
+staat een [nog te ondertekenen inzageovereenkomst](ONDERZOEK_INZAGEOVEREENKOMST.txt)
+klaar. Deze moet vooraf daadwerkelijk worden overeengekomen. De repository
+bevat geen toegangsscherm dat instemming vastlegt; een openbare PDF wordt door
+deze documenten niet achteraf vertrouwelijk. Voor vertrouwelijke verstrekking
+is gecontroleerde toegang nodig, na aanvaarding van de overeenkomst.
+
+[onderzoek.rechten.json](onderzoek.rechten.json) registreert de voor- en
+naversie met SHA-256, paginatallen en de toegevoegde vermeldingen. Dit is lokale
+versie-identificatie, geen onafhankelijke tijdstempel of bewijs van auteurschap.
+Bewaar oorspronkelijke bronbestanden en ontstaansgeschiedenis.
+Een [i-DEPOT](https://ondernemersplein.overheid.nl/product-dienst-en-innovatie/idee-vastleggen-en-beschermen/uw-idee-vastleggen/)
+kan helpen een bestaansdatum vast te leggen, maar vestigt geen eigendomsrecht.
+Laat de rechtenpositie en de overeenkomst vóór gebruik juridisch beoordelen.
+
 Ophangen leest een formele Nederlandse instructietaal, controleert lesdocumenten
 en maakt een interactieve lespresentatie. Python 3.11 of hoger en uv zijn nodig.
 De kern gebruikt de standaardbibliotheek; de logexport gebruikt daarnaast

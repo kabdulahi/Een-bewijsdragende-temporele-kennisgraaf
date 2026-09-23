@@ -1,0 +1,154 @@
+ONDERZOEK.PDF - AUTEURSRECHT EN WETENSCHAPPELIJKE INZAGE
+Versie 1.1 - 23 september 2026
+SPDX-License-Identifier: LicenseRef-Onderzoek-Scientific-Inspection-1.1
+
+Titel: Een bewijsdragende temporele kennisgraaf
+Ondertitel: Formele logica, recursieve Nederlandse taalsemantiek,
+herkomstregistratie en driedimensionale virtualisatie
+Onderzoeksmanuscript, september 2026
+
+Auteur en rechthebbende: Karim Abdulahi
+Copyright (c) 2026 Karim Abdulahi. Alle rechten voorbehouden.
+Homepage: https://1e100.nl/
+E-mail voor schriftelijke toestemming: karim.abdulahi@outlook.com
+
+1. Auteurschap en reikwijdte
+
+Karim Abdulahi verklaart de auteur van dit onderzoeksmanuscript te zijn en
+behoudt de hem toekomende auteursrechten en persoonlijkheidsrechten op zijn
+oorspronkelijke bijdrage. Deze verklaring betreft de eigen tekst, originele
+figuren, uitwerkingen en creatieve selectie en ordening van het manuscript,
+voor zover die wettelijk beschermd zijn. Er worden geen rechten overgedragen.
+
+Deze voorwaarden gelden afzonderlijk voor onderzoek.pdf, met inbegrip van de
+daarin opgenomen oorspronkelijke onderzoeksinhoud, ook wanneer het bestand
+wordt hernoemd of in een ander formaat wordt aangeboden. De algemene
+softwarelicentie van Ophangen verleent geen aanvullende toestemming voor
+dit manuscript. Het bestand onderzoek.rechten.json identificeert de huidige
+bestandsversie en de versie waaraan het auteursvoorblad is toegevoegd.
+
+Verwijzingen naar andere publicaties, citaten, reeds bestaande theorieën en
+materiaal van derden blijven onder de rechten van hun eigen rechthebbenden
+vallen. Deze verklaring eigent die rechten niet toe.
+
+2. Beperkte toestemming tot inzage
+
+Het manuscript wordt uitsluitend ter persoonlijke inzage voor
+niet-commerciële wetenschappelijke doeleinden beschikbaar gesteld. Deze
+beperkte, niet-overdraagbare en niet-sublicentieerbare toestemming omvat lezen
+en bestuderen, met uitsluitend de technische en private lokale kopieën die
+daarvoor noodzakelijk zijn. Het doel van deze toestemming is kennisnemen van
+en beoordelen van het manuscript; het is geen algemene hergebruiklicentie.
+
+Een wetenschappelijk doel of een naamsvermelding geeft op zichzelf geen
+toestemming voor andere handelingen. Voor zover toestemming juridisch
+vereist is, blijft ieder ander gebruik onderworpen aan voorafgaande
+schriftelijke toestemming van Karim Abdulahi.
+
+3. Voorbehouden handelingen
+
+Zonder die schriftelijke toestemming wordt geen recht verleend om beschermde
+inhoud geheel of gedeeltelijk over te nemen, te verspreiden, openbaar te
+maken, te publiceren, te vertalen, te bewerken, commercieel te exploiteren
+of in andere publicaties, software, datasets, diensten of producten op te
+nemen. Dit geldt ook voor scans, screenshots, afgeleide documenten en
+geautomatiseerde extractie van beschermde inhoud.
+
+Voor zover de wet een rechtenvoorbehoud toestaat, worden de rechten voor
+tekst- en datamining, modeltraining en vergelijkbare verwerking uitdrukkelijk
+voorbehouden. Wettelijke uitzonderingen die niet op deze manier kunnen
+worden uitgesloten, blijven onverkort gelden. Deze tekst vormt geen garantie
+dat een specifieke technische manier van online beschikbaarstelling aan
+alle vereisten voor een machinaal leesbaar voorbehoud voldoet.
+
+Auteursvermelding, titel, bronverwijzingen en rechtenvermeldingen mogen bij
+een toegestane kopie niet worden verwijderd of misleidend gewijzigd.
+Toegestane verwerking mag niet als eigen auteurschap worden gepresenteerd.
+Een toestemming voor één doel geldt niet automatisch voor een ander doel.
+
+4. Feiten, kennis en een afzonderlijke overeenkomst
+
+Wetenschappelijke feiten, ideeën, theorieën en methoden als zodanig worden
+niet door deze verklaring tot exclusief eigendom van Karim Abdulahi gemaakt.
+De oorspronkelijke beschermde vorm waarin zij in het manuscript zijn
+uitgewerkt, moet worden onderscheiden van de onderliggende kennis. Eventuele
+andere intellectuele-eigendomsrechten worden alleen voorbehouden voor zover
+zij daadwerkelijk bestaan; deze verklaring vestigt geen octrooi of
+databankenrecht.
+
+Aanvullende beperkingen op gebruik van specifiek verstrekte
+onderzoeksinformatie kunnen alleen steunen op een afzonderlijk rechtsgeldig
+overeengekomen regeling of een andere toepasselijke rechtsgrond. Daarvoor
+is ONDERZOEK_INZAGEOVEREENKOMST.txt als nog te ondertekenen model beschikbaar.
+Het opnemen van dat model in de repository, het lezen van deze verklaring
+of het openen van de PDF bewijst niet dat iemand die overeenkomst heeft
+aanvaard. Een overeenkomst bindt niet automatisch andere lezers of derden.
+Openbare informatie wordt hiermee niet achteraf vertrouwelijk gemaakt.
+
+5. Schriftelijke toestemming
+
+Een verzoek aan karim.abdulahi@outlook.com vermeldt wie het gebruik wil
+maken, welke bestandsversie en passages het betreft, welk doel en welke
+handelingen worden beoogd, de duur en eventuele verspreiding of publicatie.
+Toestemming moet vooraf expliciet schriftelijk door Karim Abdulahi worden
+gegeven; een duidelijke e-mail kan daarvoor worden gebruikt. Stilzwijgen,
+beschikbaarheid van het bestand en alleen een bronvermelding zijn geen
+schriftelijke toestemming. De reikwijdte volgt uit de gegeven toestemming.
+
+6. Wettelijke grenzen en bestaande rechten
+
+Dwingend recht, toepasselijke wettelijke uitzonderingen, rechten van derden
+en eerder rechtsgeldig verleende toestemmingen blijven gelden. Dit omvat
+bijvoorbeeld rechtmatig citeren wanneer aan de wettelijke voorwaarden is
+voldaan. Deze verklaring trekt geen al verleende rechten met terugwerkende
+kracht in en zet toepasselijke rechten uit hostingvoorwaarden niet opzij.
+
+Deze auteursvermelding legt de verklaring van Karim Abdulahi vast. Zij
+vervangt geen bewijs van de totstandkoming, geen controle van eventuele
+rechten van medemakers of andere rechthebbenden en geen rechtsgeldige akte
+van overdracht. De bestandsvingerafdrukken dienen ter versie-identificatie;
+zij bewijzen op zichzelf geen auteurschap of eerdere bestaansdatum.
+
+Laat bij een geschil of vóór gebruik van de afzonderlijke overeenkomst de
+rechtenpositie en afdwingbaarheid toetsen door een jurist gespecialiseerd
+in intellectuele eigendom.
+
+7. Voorpublicatie en later eigen gebruik als scriptie
+
+Deze versie is een voorpublicatie van een onderzoeksmanuscript. De publicatie
+vormt op zichzelf geen indiening, beoordeling of goedkeuring als bachelor-
+of masterscriptie en schept geen aanspraak op een graad.
+
+Karim Abdulahi behoudt, voor zover de rechten hem toekomen, onverkort het
+recht zijn oorspronkelijke bijdrage later zelf te hergebruiken, te herzien,
+te vertalen, uit te breiden, opnieuw te publiceren en geheel of gedeeltelijk
+als bachelor- of masterscriptie aan te bieden. De beperkte toestemming aan
+lezers is niet exclusief, draagt geen auteursrechten over en beperkt dit
+eigen gebruik niet. Rechten van derden blijven daarbij gelden.
+
+De beoogde toepassing is een mogelijk bachelorproject voor Computing Science
+aan de Radboud Universiteit Nijmegen. De opleiding beoordeelt of en onder
+welke voorwaarden eerder openbaar gemaakt of eerder vervaardigd werk voor
+het eindproject mag worden gebruikt. Hetzelfde geldt voor een eventuele
+latere masteropleiding. Deze voorwaarden verplichten geen onderwijsinstelling
+tot acceptatie, vrijstelling, beoordeling, studiepunten of graadverlening.
+
+Bij een latere uitdrukkelijke schriftelijke indiening door Karim Abdulahi
+staat hij de aangewezen onderwijsinstelling toe de ingediende versie te
+verwerken en noodzakelijke kopieën te maken voor begeleiding, beoordeling,
+wetenschappelijke-integriteitscontrole en de daarbij geldende archivering,
+binnen de kenbaar gemaakte en bij indiening overeengekomen regeling. Dit
+omvat verwerking door daartoe ingeschakelde dienstverleners voor die doelen.
+Het verleent geen algemeen recht tot openbaarmaking, commercieel hergebruik
+of modeltraining. Voor publicatie in een openbare scriptierepository wordt
+een afzonderlijke toestemming met behoud van de eigen rechten vastgelegd,
+tenzij daarvoor al een toepasselijke toestemming of wettelijke grond bestaat.
+
+De auteur maakt bij indiening de voorpublicatie, overgenomen onderdelen,
+nieuwe bijdrage en relevante hulpmiddelen transparant volgens de regels
+van de opleiding. De auteursvermelding is geen vrijstelling van
+bronvermelding, eisen aan eigen werk of regels voor het gebruik van AI.
+De praktische herkomstverklaring en het conceptverzoek aan de opleiding
+staan in ONDERZOEK_HERKOMST.md. Die documenten vervangen geen besluit van de
+begeleider, opleiding of bevoegde examencommissie.
+
