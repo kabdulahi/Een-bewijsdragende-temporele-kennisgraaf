@@ -2,7 +2,7 @@
 
 ## Auteur en gebruiksvoorwaarden
 
-Auteur: **Karim Abdulahi**. Homepage: [https://1e100.nl/](https://1e100.nl/).
+Auteur: **Karim Abdulahi**. Homepage: [https://karim.1e100.nl/](https://karim.1e100.nl/).
 E-mail: [karim.abdulahi@outlook.com](mailto:karim.abdulahi@outlook.com).
 
 Ophangen heeft een eigen restrictieve
